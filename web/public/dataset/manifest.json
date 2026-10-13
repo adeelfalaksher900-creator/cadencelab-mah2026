@@ -1,0 +1,1277 @@
+[
+  {
+    "id": "jfk-1961-1-control-0",
+    "reference_id": "jfk-1961-1",
+    "kind": "control",
+    "severity": 0,
+    "audio": "jfk-1961-1-control-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "jfk-1961-1-gain-0",
+    "reference_id": "jfk-1961-1",
+    "kind": "gain",
+    "severity": 0,
+    "audio": "jfk-1961-1-gain-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "jfk-1961-1-pitchcontrol-0",
+    "reference_id": "jfk-1961-1",
+    "kind": "pitchcontrol",
+    "severity": 0,
+    "audio": "jfk-1961-1-pitchcontrol-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "jfk-1961-1-pace-1",
+    "reference_id": "jfk-1961-1",
+    "kind": "pace",
+    "severity": 1,
+    "audio": "jfk-1961-1-pace-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.146581863166954,
+        "end": 7.802956863166955,
+        "reference_start": 5.146581863166954,
+        "reference_end": 8.183604017857142,
+        "factor": 1.15
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pace-2",
+    "reference_id": "jfk-1961-1",
+    "kind": "pace",
+    "severity": 2,
+    "audio": "jfk-1961-1-pace-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.146581863166954,
+        "end": 7.333206863166954,
+        "reference_start": 5.146581863166954,
+        "reference_end": 8.183604017857142,
+        "factor": 1.4
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pace-3",
+    "reference_id": "jfk-1961-1",
+    "kind": "pace",
+    "severity": 3,
+    "audio": "jfk-1961-1-pace-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.146581863166954,
+        "end": 6.8482693631669544,
+        "reference_start": 5.146581863166954,
+        "reference_end": 8.183604017857142,
+        "factor": 1.8
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-energy-1",
+    "reference_id": "jfk-1961-1",
+    "kind": "energy",
+    "severity": 1,
+    "audio": "jfk-1961-1-energy-1.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "gain": 0.5
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-energy-2",
+    "reference_id": "jfk-1961-1",
+    "kind": "energy",
+    "severity": 2,
+    "audio": "jfk-1961-1-energy-2.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "gain": 0.25
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-energy-3",
+    "reference_id": "jfk-1961-1",
+    "kind": "energy",
+    "severity": 3,
+    "audio": "jfk-1961-1-energy-3.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "gain": 0.1
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pause-1",
+    "reference_id": "jfk-1961-1",
+    "kind": "pause",
+    "severity": 1,
+    "audio": "jfk-1961-1-pause-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 9.269341517857143,
+        "end": 9.830208482142858,
+        "inserted_seconds": 0.4
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pause-2",
+    "reference_id": "jfk-1961-1",
+    "kind": "pause",
+    "severity": 2,
+    "audio": "jfk-1961-1-pause-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 9.269341517857143,
+        "end": 10.330208482142858,
+        "inserted_seconds": 0.9
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pause-3",
+    "reference_id": "jfk-1961-1",
+    "kind": "pause",
+    "severity": 3,
+    "audio": "jfk-1961-1-pause-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 9.269341517857143,
+        "end": 11.230208482142858,
+        "inserted_seconds": 1.8
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-noise-1",
+    "reference_id": "jfk-1961-1",
+    "kind": "noise",
+    "severity": 1,
+    "audio": "jfk-1961-1-noise-1.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "snr_db": 20
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-noise-2",
+    "reference_id": "jfk-1961-1",
+    "kind": "noise",
+    "severity": 2,
+    "audio": "jfk-1961-1-noise-2.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "snr_db": 10
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-noise-3",
+    "reference_id": "jfk-1961-1",
+    "kind": "noise",
+    "severity": 3,
+    "audio": "jfk-1961-1-noise-3.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.146581863166954,
+        "end": 8.183604017857142,
+        "snr_db": 0
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pitch-1",
+    "reference_id": "jfk-1961-1",
+    "kind": "pitch",
+    "severity": 1,
+    "audio": "jfk-1961-1-pitch-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.146581863166954,
+        "end": 8.183581863166953,
+        "semitones": 2
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pitch-2",
+    "reference_id": "jfk-1961-1",
+    "kind": "pitch",
+    "severity": 2,
+    "audio": "jfk-1961-1-pitch-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.146581863166954,
+        "end": 8.183581863166953,
+        "semitones": 4
+      }
+    ]
+  },
+  {
+    "id": "jfk-1961-1-pitch-3",
+    "reference_id": "jfk-1961-1",
+    "kind": "pitch",
+    "severity": 3,
+    "audio": "jfk-1961-1-pitch-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.146581863166954,
+        "end": 8.183581863166953,
+        "semitones": 7
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-control-0",
+    "reference_id": "obama-20170114-1",
+    "kind": "control",
+    "severity": 0,
+    "audio": "obama-20170114-1-control-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-1-gain-0",
+    "reference_id": "obama-20170114-1",
+    "kind": "gain",
+    "severity": 0,
+    "audio": "obama-20170114-1-gain-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-1-pitchcontrol-0",
+    "reference_id": "obama-20170114-1",
+    "kind": "pitchcontrol",
+    "severity": 0,
+    "audio": "obama-20170114-1-pitchcontrol-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-1-pace-1",
+    "reference_id": "obama-20170114-1",
+    "kind": "pace",
+    "severity": 1,
+    "audio": "obama-20170114-1-pace-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.2028112449799195,
+        "end": 8.00599874497992,
+        "reference_start": 4.2028112449799195,
+        "reference_end": 8.56425702811245,
+        "factor": 1.15
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pace-2",
+    "reference_id": "obama-20170114-1",
+    "kind": "pace",
+    "severity": 2,
+    "audio": "obama-20170114-1-pace-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.2028112449799195,
+        "end": 7.33768624497992,
+        "reference_start": 4.2028112449799195,
+        "reference_end": 8.56425702811245,
+        "factor": 1.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pace-3",
+    "reference_id": "obama-20170114-1",
+    "kind": "pace",
+    "severity": 3,
+    "audio": "obama-20170114-1-pace-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.2028112449799195,
+        "end": 6.63831124497992,
+        "reference_start": 4.2028112449799195,
+        "reference_end": 8.56425702811245,
+        "factor": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-energy-1",
+    "reference_id": "obama-20170114-1",
+    "kind": "energy",
+    "severity": 1,
+    "audio": "obama-20170114-1-energy-1.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "gain": 0.5
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-energy-2",
+    "reference_id": "obama-20170114-1",
+    "kind": "energy",
+    "severity": 2,
+    "audio": "obama-20170114-1-energy-2.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "gain": 0.25
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-energy-3",
+    "reference_id": "obama-20170114-1",
+    "kind": "energy",
+    "severity": 3,
+    "audio": "obama-20170114-1-energy-3.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "gain": 0.1
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pause-1",
+    "reference_id": "obama-20170114-1",
+    "kind": "pause",
+    "severity": 1,
+    "audio": "obama-20170114-1-pause-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.251004016064257,
+        "end": 6.691164658634539,
+        "inserted_seconds": 0.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pause-2",
+    "reference_id": "obama-20170114-1",
+    "kind": "pause",
+    "severity": 2,
+    "audio": "obama-20170114-1-pause-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.251004016064257,
+        "end": 7.191164658634539,
+        "inserted_seconds": 0.9
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pause-3",
+    "reference_id": "obama-20170114-1",
+    "kind": "pause",
+    "severity": 3,
+    "audio": "obama-20170114-1-pause-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.251004016064257,
+        "end": 8.091164658634538,
+        "inserted_seconds": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-noise-1",
+    "reference_id": "obama-20170114-1",
+    "kind": "noise",
+    "severity": 1,
+    "audio": "obama-20170114-1-noise-1.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "snr_db": 20
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-noise-2",
+    "reference_id": "obama-20170114-1",
+    "kind": "noise",
+    "severity": 2,
+    "audio": "obama-20170114-1-noise-2.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "snr_db": 10
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-noise-3",
+    "reference_id": "obama-20170114-1",
+    "kind": "noise",
+    "severity": 3,
+    "audio": "obama-20170114-1-noise-3.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.2028112449799195,
+        "end": 8.56425702811245,
+        "snr_db": 0
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pitch-1",
+    "reference_id": "obama-20170114-1",
+    "kind": "pitch",
+    "severity": 1,
+    "audio": "obama-20170114-1-pitch-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.2028112449799195,
+        "end": 8.564311244979919,
+        "semitones": 2
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pitch-2",
+    "reference_id": "obama-20170114-1",
+    "kind": "pitch",
+    "severity": 2,
+    "audio": "obama-20170114-1-pitch-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.2028112449799195,
+        "end": 8.564311244979919,
+        "semitones": 4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-1-pitch-3",
+    "reference_id": "obama-20170114-1",
+    "kind": "pitch",
+    "severity": 3,
+    "audio": "obama-20170114-1-pitch-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.2028112449799195,
+        "end": 8.564311244979919,
+        "semitones": 7
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-control-0",
+    "reference_id": "obama-20170114-2",
+    "kind": "control",
+    "severity": 0,
+    "audio": "obama-20170114-2-control-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-2-gain-0",
+    "reference_id": "obama-20170114-2",
+    "kind": "gain",
+    "severity": 0,
+    "audio": "obama-20170114-2-gain-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-2-pitchcontrol-0",
+    "reference_id": "obama-20170114-2",
+    "kind": "pitchcontrol",
+    "severity": 0,
+    "audio": "obama-20170114-2-pitchcontrol-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170114-2-pace-1",
+    "reference_id": "obama-20170114-2",
+    "kind": "pace",
+    "severity": 1,
+    "audio": "obama-20170114-2-pace-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.267068273092369,
+        "end": 10.26888077309237,
+        "reference_start": 5.267068273092369,
+        "reference_end": 11.014056224899598,
+        "factor": 1.15
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pace-2",
+    "reference_id": "obama-20170114-2",
+    "kind": "pace",
+    "severity": 2,
+    "audio": "obama-20170114-2-pace-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.267068273092369,
+        "end": 9.388693273092368,
+        "reference_start": 5.267068273092369,
+        "reference_end": 11.014056224899598,
+        "factor": 1.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pace-3",
+    "reference_id": "obama-20170114-2",
+    "kind": "pace",
+    "severity": 3,
+    "audio": "obama-20170114-2-pace-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 5.267068273092369,
+        "end": 8.46488077309237,
+        "reference_start": 5.267068273092369,
+        "reference_end": 11.014056224899598,
+        "factor": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-energy-1",
+    "reference_id": "obama-20170114-2",
+    "kind": "energy",
+    "severity": 1,
+    "audio": "obama-20170114-2-energy-1.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "gain": 0.5
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-energy-2",
+    "reference_id": "obama-20170114-2",
+    "kind": "energy",
+    "severity": 2,
+    "audio": "obama-20170114-2-energy-2.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "gain": 0.25
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-energy-3",
+    "reference_id": "obama-20170114-2",
+    "kind": "energy",
+    "severity": 3,
+    "audio": "obama-20170114-2-energy-3.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "gain": 0.1
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pause-1",
+    "reference_id": "obama-20170114-2",
+    "kind": "pause",
+    "severity": 1,
+    "audio": "obama-20170114-2-pause-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 7.997991967871486,
+        "end": 8.642971887550202,
+        "inserted_seconds": 0.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pause-2",
+    "reference_id": "obama-20170114-2",
+    "kind": "pause",
+    "severity": 2,
+    "audio": "obama-20170114-2-pause-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 7.997991967871486,
+        "end": 9.142971887550202,
+        "inserted_seconds": 0.9
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pause-3",
+    "reference_id": "obama-20170114-2",
+    "kind": "pause",
+    "severity": 3,
+    "audio": "obama-20170114-2-pause-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 7.997991967871486,
+        "end": 10.042971887550202,
+        "inserted_seconds": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-noise-1",
+    "reference_id": "obama-20170114-2",
+    "kind": "noise",
+    "severity": 1,
+    "audio": "obama-20170114-2-noise-1.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "snr_db": 20
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-noise-2",
+    "reference_id": "obama-20170114-2",
+    "kind": "noise",
+    "severity": 2,
+    "audio": "obama-20170114-2-noise-2.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "snr_db": 10
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-noise-3",
+    "reference_id": "obama-20170114-2",
+    "kind": "noise",
+    "severity": 3,
+    "audio": "obama-20170114-2-noise-3.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 5.267068273092369,
+        "end": 11.014056224899598,
+        "snr_db": 0
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pitch-1",
+    "reference_id": "obama-20170114-2",
+    "kind": "pitch",
+    "severity": 1,
+    "audio": "obama-20170114-2-pitch-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.267068273092369,
+        "end": 11.014005773092368,
+        "semitones": 2
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pitch-2",
+    "reference_id": "obama-20170114-2",
+    "kind": "pitch",
+    "severity": 2,
+    "audio": "obama-20170114-2-pitch-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.267068273092369,
+        "end": 11.014005773092368,
+        "semitones": 4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170114-2-pitch-3",
+    "reference_id": "obama-20170114-2",
+    "kind": "pitch",
+    "severity": 3,
+    "audio": "obama-20170114-2-pitch-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 5.267068273092369,
+        "end": 11.014005773092368,
+        "semitones": 7
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-control-0",
+    "reference_id": "obama-20170107-1",
+    "kind": "control",
+    "severity": 0,
+    "audio": "obama-20170107-1-control-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-1-gain-0",
+    "reference_id": "obama-20170107-1",
+    "kind": "gain",
+    "severity": 0,
+    "audio": "obama-20170107-1-gain-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-1-pitchcontrol-0",
+    "reference_id": "obama-20170107-1",
+    "kind": "pitchcontrol",
+    "severity": 0,
+    "audio": "obama-20170107-1-pitchcontrol-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-1-pace-1",
+    "reference_id": "obama-20170107-1",
+    "kind": "pace",
+    "severity": 1,
+    "audio": "obama-20170107-1-pace-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.403614457831325,
+        "end": 9.190364457831325,
+        "reference_start": 4.403614457831325,
+        "reference_end": 9.889558232931726,
+        "factor": 1.15
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pace-2",
+    "reference_id": "obama-20170107-1",
+    "kind": "pace",
+    "severity": 2,
+    "audio": "obama-20170107-1-pace-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.403614457831325,
+        "end": 8.327926957831325,
+        "reference_start": 4.403614457831325,
+        "reference_end": 9.889558232931726,
+        "factor": 1.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pace-3",
+    "reference_id": "obama-20170107-1",
+    "kind": "pace",
+    "severity": 3,
+    "audio": "obama-20170107-1-pace-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 4.403614457831325,
+        "end": 7.451989457831325,
+        "reference_start": 4.403614457831325,
+        "reference_end": 9.889558232931726,
+        "factor": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-energy-1",
+    "reference_id": "obama-20170107-1",
+    "kind": "energy",
+    "severity": 1,
+    "audio": "obama-20170107-1-energy-1.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "gain": 0.5
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-energy-2",
+    "reference_id": "obama-20170107-1",
+    "kind": "energy",
+    "severity": 2,
+    "audio": "obama-20170107-1-energy-2.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "gain": 0.25
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-energy-3",
+    "reference_id": "obama-20170107-1",
+    "kind": "energy",
+    "severity": 3,
+    "audio": "obama-20170107-1-energy-3.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "gain": 0.1
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pause-1",
+    "reference_id": "obama-20170107-1",
+    "kind": "pause",
+    "severity": 1,
+    "audio": "obama-20170107-1-pause-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.973895582329317,
+        "end": 7.414056224899599,
+        "inserted_seconds": 0.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pause-2",
+    "reference_id": "obama-20170107-1",
+    "kind": "pause",
+    "severity": 2,
+    "audio": "obama-20170107-1-pause-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.973895582329317,
+        "end": 7.914056224899599,
+        "inserted_seconds": 0.9
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pause-3",
+    "reference_id": "obama-20170107-1",
+    "kind": "pause",
+    "severity": 3,
+    "audio": "obama-20170107-1-pause-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 6.973895582329317,
+        "end": 8.814056224899598,
+        "inserted_seconds": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-noise-1",
+    "reference_id": "obama-20170107-1",
+    "kind": "noise",
+    "severity": 1,
+    "audio": "obama-20170107-1-noise-1.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "snr_db": 20
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-noise-2",
+    "reference_id": "obama-20170107-1",
+    "kind": "noise",
+    "severity": 2,
+    "audio": "obama-20170107-1-noise-2.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "snr_db": 10
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-noise-3",
+    "reference_id": "obama-20170107-1",
+    "kind": "noise",
+    "severity": 3,
+    "audio": "obama-20170107-1-noise-3.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 4.403614457831325,
+        "end": 9.889558232931726,
+        "snr_db": 0
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pitch-1",
+    "reference_id": "obama-20170107-1",
+    "kind": "pitch",
+    "severity": 1,
+    "audio": "obama-20170107-1-pitch-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.403614457831325,
+        "end": 9.889551957831326,
+        "semitones": 2
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pitch-2",
+    "reference_id": "obama-20170107-1",
+    "kind": "pitch",
+    "severity": 2,
+    "audio": "obama-20170107-1-pitch-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.403614457831325,
+        "end": 9.889551957831326,
+        "semitones": 4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-1-pitch-3",
+    "reference_id": "obama-20170107-1",
+    "kind": "pitch",
+    "severity": 3,
+    "audio": "obama-20170107-1-pitch-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 4.403614457831325,
+        "end": 9.889551957831326,
+        "semitones": 7
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-control-0",
+    "reference_id": "obama-20170107-2",
+    "kind": "control",
+    "severity": 0,
+    "audio": "obama-20170107-2-control-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-2-gain-0",
+    "reference_id": "obama-20170107-2",
+    "kind": "gain",
+    "severity": 0,
+    "audio": "obama-20170107-2-gain-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-2-pitchcontrol-0",
+    "reference_id": "obama-20170107-2",
+    "kind": "pitchcontrol",
+    "severity": 0,
+    "audio": "obama-20170107-2-pitchcontrol-0.flac",
+    "ground_truth": []
+  },
+  {
+    "id": "obama-20170107-2-pace-1",
+    "reference_id": "obama-20170107-2",
+    "kind": "pace",
+    "severity": 1,
+    "audio": "obama-20170107-2-pace-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 3.334825910786001,
+        "end": 8.357325910786,
+        "reference_start": 3.334825910786001,
+        "reference_end": 9.106425702811244,
+        "factor": 1.15
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pace-2",
+    "reference_id": "obama-20170107-2",
+    "kind": "pace",
+    "severity": 2,
+    "audio": "obama-20170107-2-pace-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 3.334825910786001,
+        "end": 7.4607009107860005,
+        "reference_start": 3.334825910786001,
+        "reference_end": 9.106425702811244,
+        "factor": 1.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pace-3",
+    "reference_id": "obama-20170107-2",
+    "kind": "pace",
+    "severity": 3,
+    "audio": "obama-20170107-2-pace-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pace",
+        "start": 3.334825910786001,
+        "end": 6.553263410786001,
+        "reference_start": 3.334825910786001,
+        "reference_end": 9.106425702811244,
+        "factor": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-energy-1",
+    "reference_id": "obama-20170107-2",
+    "kind": "energy",
+    "severity": 1,
+    "audio": "obama-20170107-2-energy-1.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "gain": 0.5
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-energy-2",
+    "reference_id": "obama-20170107-2",
+    "kind": "energy",
+    "severity": 2,
+    "audio": "obama-20170107-2-energy-2.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "gain": 0.25
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-energy-3",
+    "reference_id": "obama-20170107-2",
+    "kind": "energy",
+    "severity": 3,
+    "audio": "obama-20170107-2-energy-3.flac",
+    "ground_truth": [
+      {
+        "kind": "energy",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "gain": 0.1
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pause-1",
+    "reference_id": "obama-20170107-2",
+    "kind": "pause",
+    "severity": 1,
+    "audio": "obama-20170107-2-pause-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 5.789156626506024,
+        "end": 6.269477911646587,
+        "inserted_seconds": 0.4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pause-2",
+    "reference_id": "obama-20170107-2",
+    "kind": "pause",
+    "severity": 2,
+    "audio": "obama-20170107-2-pause-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 5.789156626506024,
+        "end": 6.769477911646587,
+        "inserted_seconds": 0.9
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pause-3",
+    "reference_id": "obama-20170107-2",
+    "kind": "pause",
+    "severity": 3,
+    "audio": "obama-20170107-2-pause-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pause",
+        "start": 5.789156626506024,
+        "end": 7.669477911646586,
+        "inserted_seconds": 1.8
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-noise-1",
+    "reference_id": "obama-20170107-2",
+    "kind": "noise",
+    "severity": 1,
+    "audio": "obama-20170107-2-noise-1.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "snr_db": 20
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-noise-2",
+    "reference_id": "obama-20170107-2",
+    "kind": "noise",
+    "severity": 2,
+    "audio": "obama-20170107-2-noise-2.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "snr_db": 10
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-noise-3",
+    "reference_id": "obama-20170107-2",
+    "kind": "noise",
+    "severity": 3,
+    "audio": "obama-20170107-2-noise-3.flac",
+    "ground_truth": [
+      {
+        "kind": "texture",
+        "start": 3.334825910786001,
+        "end": 9.106425702811244,
+        "snr_db": 0
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pitch-1",
+    "reference_id": "obama-20170107-2",
+    "kind": "pitch",
+    "severity": 1,
+    "audio": "obama-20170107-2-pitch-1.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 3.334825910786001,
+        "end": 9.097200910786,
+        "semitones": 2
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pitch-2",
+    "reference_id": "obama-20170107-2",
+    "kind": "pitch",
+    "severity": 2,
+    "audio": "obama-20170107-2-pitch-2.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 3.334825910786001,
+        "end": 9.106388410786002,
+        "semitones": 4
+      }
+    ]
+  },
+  {
+    "id": "obama-20170107-2-pitch-3",
+    "reference_id": "obama-20170107-2",
+    "kind": "pitch",
+    "severity": 3,
+    "audio": "obama-20170107-2-pitch-3.flac",
+    "ground_truth": [
+      {
+        "kind": "pitch",
+        "start": 3.334825910786001,
+        "end": 9.106388410786002,
+        "semitones": 7
+      }
+    ]
+  }
+]

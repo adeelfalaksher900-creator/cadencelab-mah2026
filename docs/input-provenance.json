@@ -1,0 +1,38 @@
+[
+  {
+    "file": "models/wav2vec2-q8.onnx",
+    "source": "https://huggingface.co/Xenova/wav2vec2-base-960h/resolve/40a7d3243922b1fcbf660285036ecc7ef52667ea/onnx/model_quantized.onnx",
+    "bytes": 95286046,
+    "sha256": "cd5040c147381580ed73258143dd8e0c28e800a09e74ee42ee2b3e8cb4d760a3"
+  },
+  {
+    "file": "models/vocab.json",
+    "source": "https://huggingface.co/Xenova/wav2vec2-base-960h/resolve/40a7d3243922b1fcbf660285036ecc7ef52667ea/vocab.json",
+    "bytes": 358,
+    "sha256": "4178db26b3c7570f6a47f14ac6a1c7b32950b8c2800fb097287e53776934f1c5"
+  },
+  {
+    "file": "models/config.json",
+    "source": "https://huggingface.co/Xenova/wav2vec2-base-960h/resolve/40a7d3243922b1fcbf660285036ecc7ef52667ea/config.json",
+    "bytes": 2094,
+    "sha256": "ceff8f92e6670ad3633779bd43b3559628c1a64b0868ef6046b23d62b85c69d5"
+  },
+  {
+    "file": "data/jfk.wav",
+    "source": "https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/159e0fd398b57d12a34e6a01e426e9e416ffce30/jfk.wav",
+    "bytes": 1940478,
+    "sha256": "aa81c2552465568567e670f3823117e633900d16bd6202346a72f3c8464c74c8"
+  },
+  {
+    "file": "data/obama-20170114.mp3",
+    "source": "https://obamawhitehouse.archives.gov/videos/2017/January/20170114_Weekly_Address.mp3",
+    "bytes": 3532800,
+    "sha256": "04d95f6bca5b3b8550aa54df467c84082c9b2d7875fdff3db5b3fb58ede5f84b"
+  },
+  {
+    "file": "data/obama-20170107.mp3",
+    "source": "https://obamawhitehouse.archives.gov/videos/2017/January/20170107_Weekly_Address.mp3",
+    "bytes": 2820096,
+    "sha256": "a95e8721acd135b7fc4902046c128281920e350f3d65490d5732fe0e021cf004"
+  }
+]

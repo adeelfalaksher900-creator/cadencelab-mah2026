@@ -1,0 +1,156 @@
+{
+  "benchmark": "CadenceLab controlled acoustic perturbations v1",
+  "cases": 90,
+  "reference_excerpts": 5,
+  "speakers": 2,
+  "speeches": 3,
+  "positive_cases": 75,
+  "matched_cases": 43,
+  "case_recall": 0.573,
+  "mean_iou": 0.403,
+  "control_cases": 15,
+  "control_cases_with_regions": 2,
+  "control_false_positive_rate": 0.133,
+  "abstentions": 4,
+  "partial_reports": 2,
+  "control_abstentions": 1,
+  "moderate_strong_matches": 40,
+  "moderate_strong_cases": 50,
+  "groups": [
+    {
+      "kind": "energy",
+      "severity": 1,
+      "cases": 5,
+      "matched": 0,
+      "recall": 0.0,
+      "mean_iou": 0.0,
+      "abstained": 0
+    },
+    {
+      "kind": "energy",
+      "severity": 2,
+      "cases": 5,
+      "matched": 5,
+      "recall": 1.0,
+      "mean_iou": 0.628,
+      "abstained": 0
+    },
+    {
+      "kind": "energy",
+      "severity": 3,
+      "cases": 5,
+      "matched": 5,
+      "recall": 1.0,
+      "mean_iou": 0.638,
+      "abstained": 0
+    },
+    {
+      "kind": "noise",
+      "severity": 1,
+      "cases": 5,
+      "matched": 3,
+      "recall": 0.6,
+      "mean_iou": 0.26,
+      "abstained": 0
+    },
+    {
+      "kind": "noise",
+      "severity": 2,
+      "cases": 5,
+      "matched": 5,
+      "recall": 1.0,
+      "mean_iou": 0.669,
+      "abstained": 0
+    },
+    {
+      "kind": "noise",
+      "severity": 3,
+      "cases": 5,
+      "matched": 5,
+      "recall": 1.0,
+      "mean_iou": 0.92,
+      "abstained": 0
+    },
+    {
+      "kind": "pace",
+      "severity": 1,
+      "cases": 5,
+      "matched": 0,
+      "recall": 0.0,
+      "mean_iou": 0.0,
+      "abstained": 0
+    },
+    {
+      "kind": "pace",
+      "severity": 2,
+      "cases": 5,
+      "matched": 5,
+      "recall": 1.0,
+      "mean_iou": 0.646,
+      "abstained": 0
+    },
+    {
+      "kind": "pace",
+      "severity": 3,
+      "cases": 5,
+      "matched": 4,
+      "recall": 0.8,
+      "mean_iou": 0.498,
+      "abstained": 1
+    },
+    {
+      "kind": "pause",
+      "severity": 1,
+      "cases": 5,
+      "matched": 0,
+      "recall": 0.0,
+      "mean_iou": 0.0,
+      "abstained": 0
+    },
+    {
+      "kind": "pause",
+      "severity": 2,
+      "cases": 5,
+      "matched": 2,
+      "recall": 0.4,
+      "mean_iou": 0.389,
+      "abstained": 0
+    },
+    {
+      "kind": "pause",
+      "severity": 3,
+      "cases": 5,
+      "matched": 4,
+      "recall": 0.8,
+      "mean_iou": 0.788,
+      "abstained": 0
+    },
+    {
+      "kind": "pitch",
+      "severity": 1,
+      "cases": 5,
+      "matched": 0,
+      "recall": 0.0,
+      "mean_iou": 0.0,
+      "abstained": 0
+    },
+    {
+      "kind": "pitch",
+      "severity": 2,
+      "cases": 5,
+      "matched": 1,
+      "recall": 0.2,
+      "mean_iou": 0.196,
+      "abstained": 1
+    },
+    {
+      "kind": "pitch",
+      "severity": 3,
+      "cases": 5,
+      "matched": 4,
+      "recall": 0.8,
+      "mean_iou": 0.407,
+      "abstained": 1
+    }
+  ]
+}

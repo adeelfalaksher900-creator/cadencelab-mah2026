@@ -1,0 +1,8 @@
+{
+  "browser_energy_regions": 3,
+  "native_energy_regions": 3,
+  "browser_score": 94.8,
+  "native_score": 94.8,
+  "max_boundary_difference_seconds": 0.020000000000000462,
+  "note": "Same pinned model, public archival files and transcript. Minor numerical feature differences are expected across JS and Python."
+}

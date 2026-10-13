@@ -1,0 +1,26 @@
+{
+  "screens": [
+    {
+      "screen": "Compare",
+      "violations": []
+    },
+    {
+      "screen": "Dataset",
+      "violations": []
+    },
+    {
+      "screen": "Method",
+      "violations": []
+    },
+    {
+      "screen": "Upload",
+      "violations": []
+    }
+  ],
+  "page_errors": [],
+  "mobile_overflow": false,
+  "network_methods": [
+    "GET"
+  ],
+  "note": "Automated checks of the owned local app. No human usability study."
+}

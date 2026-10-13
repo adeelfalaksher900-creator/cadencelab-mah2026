@@ -1,0 +1,26 @@
+const {chromium}=require('playwright'),fs=require('fs'),path=require('path');
+(async()=>{
+ const b=await chromium.launch({executablePath:path.resolve('tools/chromium'),args:['--no-sandbox','--no-zygote','--disable-features=V8TrapHandler','--use-gl=angle','--use-angle=swiftshader','--disable-dev-shm-usage']});
+ const c=await b.newContext({viewport:{width:1920,height:1080},recordVideo:{dir:'video/raw',size:{width:1920,height:1080}}});const p=await c.newPage();
+ await p.route('https://huggingface.co/**/model_quantized.onnx',r=>r.fulfill({status:302,headers:{'Access-Control-Allow-Origin':'*','Location':'http://127.0.0.1:4178/test-model.onnx'}}));
+ await p.goto('http://127.0.0.1:4178');await p.locator('.finding').first().waitFor();await p.evaluate(()=>{document.documentElement.style.zoom='1.1'});const start=Date.now();
+ const wait=async t=>{let ms=t*1000-(Date.now()-start);if(ms>0)await p.waitForTimeout(ms)};
+ const example=async (src,kind)=>{await p.locator('.example-controls select').nth(0).selectOption(src);await p.locator('.example-controls select').nth(1).selectOption(kind);await p.locator('.example-controls button').click();await p.waitForTimeout(550);await p.locator('.workbench').scrollIntoViewIfNeeded().catch(()=>{});};
+ const find=async n=>{await p.locator('.finding').nth(n).click();};
+ await wait(24.4);await example('obama-20170114-1','control-0');
+ await wait(42.9);await example('obama-20170114-1','pace-2');await find(0);
+ await wait(64.9);await example('obama-20170114-1','energy-2');await find(1);
+ const tm=JSON.parse(fs.readFileSync('video/production-timing.json'));await wait(tm.listen_start);await p.getByRole('button',{name:/Hear reference/}).click();await wait(tm.practice_start);await p.getByRole('button',{name:/Hear practice/}).click();
+ await wait(92);await example('obama-20170114-2','pause-3');await find(0);
+ await wait(111);await example('obama-20170114-2','pitch-3');await find(0);
+ await wait(132);await example('jfk-1961-1','noise-3');
+ await wait(154);await p.getByRole('button',{name:'Compare recordings',exact:true}).click();const inp=p.locator('input[type=file]');await inp.nth(0).setInputFiles('web/public/dataset/obama-20170114-1-reference.flac');await inp.nth(1).setInputFiles('web/public/dataset/obama-20170114-1-energy-2.flac');const shared=JSON.parse(fs.readFileSync('web/public/dataset/references.json')).find(r=>r.id==='obama-20170114-1').transcript;await p.locator('textarea').fill(shared);
+ await wait(160);await p.getByRole('button',{name:'Run local comparison',exact:true}).click();await p.waitForFunction(()=>!document.querySelector('[role=dialog]')||document.querySelector('[role=dialog] [role=alert]'),null,{timeout:120000});if(await p.getByRole('alert').count())throw Error(await p.getByRole('alert').allTextContents());
+ await wait(182);await find(1);
+ await wait(194);const dl=p.waitForEvent('download');await p.getByRole('button',{name:'Export evidence'}).click();await (await dl).saveAs('video/recorded-upload-evidence.json');
+ await wait(208);await p.getByRole('button',{name:'Dataset',exact:true}).click();await p.getByText('Evaluation, with the misses included',{exact:true}).scrollIntoViewIfNeeded();
+ await wait(247);await p.locator('table').first().scrollIntoViewIfNeeded();
+ await wait(263);await p.getByRole('button',{name:'Method',exact:true}).click();
+ await wait(280);await p.getByText('Privacy boundary',{exact:true}).scrollIntoViewIfNeeded();await wait(303);
+ const v=p.video();await c.close();fs.writeFileSync('video/recording-receipt.json',JSON.stringify({path:await v.path(),duration:303,viewport:{width:1920,height:1080},actualUpload:true},null,2));await b.close();console.log('Recording complete');
+})().catch(e=>{console.error(e);process.exit(1)});
