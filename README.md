@@ -6,6 +6,8 @@ CadenceLab compares two recordings of the same English transcript. A quantized W
 
 The similarity score describes a documented acoustic rubric. It does not grade talent, accents, rhetorical truth, health, or a person's worth.
 
+[Open the live dashboard](https://cadencelab-mah2026.vercel.app/) · [Read the project story](https://devpost.com/software/cadencelab)
+
 ## Try it in five minutes
 
 1. Open the dashboard and select **Try a labeled example**. No installation or account is required for the public examples.
