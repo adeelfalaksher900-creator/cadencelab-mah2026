@@ -17,3 +17,9 @@ video/composition/.hyperframes/
 video/composition/assets/
 video/composition/skills/
 video/composition/.agents/
+
+tools/python-deps/
+tools/python-install.log
+video/render.log
+docs/recording-*.png
+docs/report-review-*.png

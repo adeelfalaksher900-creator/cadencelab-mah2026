@@ -1,9 +1,9 @@
 const {chromium}=require('playwright'),fs=require('fs'),path=require('path');
 (async()=>{
  const b=await chromium.launch({executablePath:path.resolve('tools/chromium'),args:['--no-sandbox','--no-zygote','--disable-features=V8TrapHandler','--use-gl=angle','--use-angle=swiftshader','--disable-dev-shm-usage']});
- const c=await b.newContext({viewport:{width:1920,height:1080},recordVideo:{dir:'video/raw',size:{width:1920,height:1080}}});const p=await c.newPage();
+ const c=await b.newContext({viewport:{width:1920,height:1080},recordVideo:{dir:'video/raw',size:{width:1920,height:1080}}});const p=await c.newPage();const recordedAt=Date.now();
  await p.route('https://huggingface.co/**/model_quantized.onnx',r=>r.fulfill({status:302,headers:{'Access-Control-Allow-Origin':'*','Location':'http://127.0.0.1:4178/test-model.onnx'}}));
- await p.goto('http://127.0.0.1:4178');await p.locator('.finding').first().waitFor();await p.evaluate(()=>{document.documentElement.style.zoom='1.1'});const start=Date.now();
+ await p.goto('http://127.0.0.1:4178');await p.locator('.finding').first().waitFor();await p.evaluate(()=>{document.documentElement.style.zoom='1.1'});const start=Date.now();const preRoll=(start-recordedAt)/1000;
  const wait=async t=>{let ms=t*1000-(Date.now()-start);if(ms>0)await p.waitForTimeout(ms)};
  const example=async (src,kind)=>{await p.locator('.example-controls select').nth(0).selectOption(src);await p.locator('.example-controls select').nth(1).selectOption(kind);await p.waitForTimeout(550);await p.locator('.workbench').scrollIntoViewIfNeeded().catch(()=>{});};
  const find=async n=>{await p.locator('.finding').nth(n).click();};
@@ -22,5 +22,5 @@ const {chromium}=require('playwright'),fs=require('fs'),path=require('path');
  await wait(247);await p.locator('table').first().scrollIntoViewIfNeeded();
  await wait(263);await p.getByRole('button',{name:'Method',exact:true}).click();
  await wait(280);await p.getByText('Privacy boundary',{exact:true}).scrollIntoViewIfNeeded();await wait(303);
- const v=p.video();await c.close();fs.writeFileSync('video/recording-receipt.json',JSON.stringify({path:await v.path(),duration:303,viewport:{width:1920,height:1080},actualUpload:true},null,2));await b.close();console.log('Recording complete');
+ const v=p.video();await c.close();fs.writeFileSync('video/recording-receipt.json',JSON.stringify({path:await v.path(),duration:303,preRoll,viewport:{width:1920,height:1080},actualUpload:true},null,2));await b.close();console.log('Recording complete');
 })().catch(e=>{console.error(e);process.exit(1)});
