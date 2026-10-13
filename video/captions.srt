@@ -1,0 +1,599 @@
+1
+00:00:00,083 --> 00:00:01,122
+this is cadence lab
+
+2
+00:00:01,383 --> 00:00:03,302
+an evidence workbench for student speakers
+
+3
+00:00:03,363 --> 00:00:03,902
+and coaches
+
+4
+00:00:04,503 --> 00:00:05,202
+it is our track c
+
+5
+00:00:05,482 --> 00:00:07,922
+project for the multimodal ai hackathon
+
+6
+00:00:08,543 --> 00:00:09,543
+the problem is simple
+
+7
+00:00:10,082 --> 00:00:10,803
+feedback like
+
+8
+00:00:11,162 --> 00:00:12,143
+speak more clearly
+
+9
+00:00:12,463 --> 00:00:13,762
+or improve your pacing
+
+10
+00:00:14,242 --> 00:00:15,763
+does not tell a student which
+
+11
+00:00:15,902 --> 00:00:16,883
+moment to practice
+
+12
+00:00:17,562 --> 00:00:19,983
+we turn measurable delivery changes into
+
+13
+00:00:20,163 --> 00:00:21,263
+intervals you can hear
+
+14
+00:00:21,703 --> 00:00:22,203
+inspect
+
+15
+00:00:22,523 --> 00:00:23,182
+and try again
+
+16
+00:00:24,343 --> 00:00:26,123
+the interface starts with two recordings
+
+17
+00:00:26,163 --> 00:00:27,023
+of the same words
+
+18
+00:00:27,562 --> 00:00:29,663
+teal is the reference and orange
+
+19
+00:00:29,763 --> 00:00:30,822
+is the practice recording
+
+20
+00:00:31,523 --> 00:00:32,682
+these examples are labeled
+
+21
+00:00:32,962 --> 00:00:35,722
+synthetic modifications of archival speeches
+
+22
+00:00:36,223 --> 00:00:38,182
+they are not real student mistakes
+
+23
+00:00:38,422 --> 00:00:39,942
+and the score does not measure
+
+24
+00:00:40,023 --> 00:00:41,663
+talent or persuasive truth
+
+25
+00:00:42,683 --> 00:00:44,482
+here is a moderate pacing change
+
+26
+00:00:45,163 --> 00:00:47,502
+selecting the finding highlights its interval
+
+27
+00:00:47,663 --> 00:00:49,602
+and the corresponding transcript words
+
+28
+00:00:50,282 --> 00:00:52,262
+the evidence panel explains the word
+
+29
+00:00:52,343 --> 00:00:52,982
+rate ratio
+
+30
+00:00:53,323 --> 00:00:55,082
+and the threshold behind the finding
+
+31
+00:00:56,023 --> 00:00:57,902
+both recordings keep their own time
+
+32
+00:00:58,023 --> 00:00:58,402
+axes
+
+33
+00:00:58,983 --> 00:01:00,582
+we compare matched words
+
+34
+00:01:00,843 --> 00:01:02,682
+rather than stretching one waveform to
+
+35
+00:01:02,742 --> 00:01:03,242
+fit the other
+
+36
+00:01:04,582 --> 00:01:06,083
+now switch to relative energy
+
+37
+00:01:06,902 --> 00:01:09,062
+this example lowers a phrase's volume
+
+38
+00:01:09,262 --> 00:01:10,723
+while preserving the transcript
+
+39
+00:01:11,462 --> 00:01:13,763
+the explanation reports a decibel difference
+
+40
+00:01:13,902 --> 00:01:15,603
+after each recording is normalized
+
+41
+00:01:16,642 --> 00:01:18,743
+the next step suggestion is focused
+
+42
+00:01:19,282 --> 00:01:21,663
+repeat that phrase with steady projection
+
+43
+00:01:21,902 --> 00:01:24,043
+and keep the microphone distance consistent
+
+44
+00:01:31,743 --> 00:01:33,963
+an extended pause is another measurable
+
+45
+00:01:34,022 --> 00:01:34,403
+change
+
+46
+00:01:35,103 --> 00:01:37,023
+the panel compares the gaps between
+
+47
+00:01:37,082 --> 00:01:38,423
+the same aligned words
+
+48
+00:01:39,062 --> 00:01:40,383
+you can seek directly to a
+
+49
+00:01:40,442 --> 00:01:40,783
+word
+
+50
+00:01:41,323 --> 00:01:42,583
+or listen to the reference and
+
+51
+00:01:42,642 --> 00:01:43,423
+practice region
+
+52
+00:01:44,362 --> 00:01:45,603
+the purpose is to make the
+
+53
+00:01:45,722 --> 00:01:46,863
+evidence easy to check
+
+54
+00:01:47,442 --> 00:01:48,383
+not to prescribe
+
+55
+00:01:48,683 --> 00:01:50,283
+one correct expressive style
+
+56
+00:01:51,502 --> 00:01:53,163
+pitch is centered in semitones
+
+57
+00:01:53,582 --> 00:01:55,683
+and a robust offset across matched
+
+58
+00:01:55,782 --> 00:01:56,143
+words
+
+59
+00:01:56,522 --> 00:01:58,743
+reduces whole recording pitch differences
+
+60
+00:01:59,603 --> 00:02:01,663
+a local pitch change remains visible
+
+61
+00:02:02,642 --> 00:02:05,043
+whole recording gain and pitch controls
+
+62
+00:02:05,243 --> 00:02:07,263
+also test the limits of normalization
+
+63
+00:02:08,042 --> 00:02:09,502
+we keep false detections in the
+
+64
+00:02:09,542 --> 00:02:10,963
+results instead of hiding them
+
+65
+00:02:12,243 --> 00:02:13,782
+noise needs special care
+
+66
+00:02:14,483 --> 00:02:16,642
+when phonetic alignment becomes unreliable
+
+67
+00:02:17,063 --> 00:02:18,782
+the acoustic texture can still be
+
+68
+00:02:18,863 --> 00:02:19,202
+measured
+
+69
+00:02:19,883 --> 00:02:22,243
+the system compares spectral flatness with
+
+70
+00:02:22,283 --> 00:02:24,243
+the reference's speech frame baseline
+
+71
+00:02:24,963 --> 00:02:26,002
+in a partial report
+
+72
+00:02:26,383 --> 00:02:28,183
+it withholds the word based score
+
+73
+00:02:28,443 --> 00:02:31,322
+and avoids presenting uncertain word timestamps
+
+74
+00:02:31,643 --> 00:02:32,702
+as reliable evidence
+
+75
+00:02:33,843 --> 00:02:35,843
+real upload analysis runs in this
+
+76
+00:02:35,903 --> 00:02:36,303
+browser
+
+77
+00:02:36,863 --> 00:02:37,662
+choose a reference
+
+78
+00:02:37,963 --> 00:02:38,843
+a practice file
+
+79
+00:02:39,203 --> 00:02:40,903
+and their shared english transcript
+
+80
+00:02:41,663 --> 00:02:43,562
+the first run downloads a pinned
+
+81
+00:02:43,823 --> 00:02:45,322
+quantized speech model
+
+82
+00:02:46,143 --> 00:02:47,963
+a worker performs acoustic inference
+
+83
+00:02:48,263 --> 00:02:50,523
+and genuine transcript constrained c
+
+84
+00:02:50,783 --> 00:02:50,822
+t
+
+85
+00:02:51,103 --> 00:02:51,123
+c
+
+86
+00:02:51,483 --> 00:02:52,343
+forced alignment
+
+87
+00:02:53,023 --> 00:02:54,722
+it does not allocate equal time
+
+88
+00:02:54,783 --> 00:02:55,463
+to every word
+
+89
+00:02:56,203 --> 00:02:57,782
+no audio upload endpoint
+
+90
+00:02:58,063 --> 00:03:00,083
+account or paid inference service is
+
+91
+00:03:00,163 --> 00:03:00,662
+required
+
+92
+00:03:01,643 --> 00:03:03,403
+the pipeline then extracts energy
+
+93
+00:03:03,823 --> 00:03:04,102
+pitch
+
+94
+00:03:04,583 --> 00:03:06,202
+pauses and spectral features
+
+95
+00:03:07,003 --> 00:03:09,982
+python evaluation also computes thirteen mel
+
+96
+00:03:10,083 --> 00:03:11,743
+frequency cepstral coefficients
+
+97
+00:03:12,703 --> 00:03:14,882
+every measured finding includes its interval
+
+98
+00:03:15,203 --> 00:03:16,243
+and numerical reason
+
+99
+00:03:17,003 --> 00:03:18,482
+you can export the evidence as
+
+100
+00:03:18,563 --> 00:03:19,822
+a reproducible report
+
+101
+00:03:20,623 --> 00:03:23,243
+a mismatch or insufficient acoustic support
+
+102
+00:03:23,623 --> 00:03:24,502
+produces an error
+
+103
+00:03:24,923 --> 00:03:26,903
+or a clearly marked partial report
+
+104
+00:03:28,003 --> 00:03:30,502
+our dataset contains ninety paired cases
+
+105
+00:03:30,583 --> 00:03:31,662
+from five excerpts
+
+106
+00:03:32,143 --> 00:03:33,862
+two speakers and three speeches
+
+107
+00:03:34,643 --> 00:03:36,583
+each transcript has three levels of
+
+108
+00:03:36,663 --> 00:03:37,102
+pacing
+
+109
+00:03:37,623 --> 00:03:37,982
+energy
+
+110
+00:03:38,443 --> 00:03:38,963
+pauses
+
+111
+00:03:39,463 --> 00:03:40,843
+noise and pitch changes
+
+112
+00:03:41,243 --> 00:03:42,422
+plus three controls
+
+113
+00:03:43,303 --> 00:03:45,562
+injection labels come from the transformation's
+
+114
+00:03:45,643 --> 00:03:46,482
+sample boundaries
+
+115
+00:03:46,983 --> 00:03:48,942
+independently of what the detector predicts
+
+116
+00:03:49,823 --> 00:03:50,422
+source links
+
+117
+00:03:50,703 --> 00:03:51,583
+recording hashes
+
+118
+00:03:51,923 --> 00:03:53,782
+and construction scripts are documented
+
+119
+00:03:54,783 --> 00:03:57,243
+the evaluation page includes every case
+
+120
+00:03:57,663 --> 00:03:58,463
+including misses
+
+121
+00:03:58,763 --> 00:03:59,523
+and abstentions
+
+122
+00:04:00,443 --> 00:04:02,502
+forty of fifty moderate and strong
+
+123
+00:04:02,583 --> 00:04:03,023
+cases
+
+124
+00:04:03,383 --> 00:04:05,523
+were localized at the declared overlap
+
+125
+00:04:05,643 --> 00:04:06,123
+threshold
+
+126
+00:04:06,943 --> 00:04:08,502
+across all severity levels
+
+127
+00:04:08,923 --> 00:04:10,982
+forty three of seventy five cases
+
+128
+00:04:11,103 --> 00:04:11,463
+matched
+
+129
+00:04:12,283 --> 00:04:12,442
+two
+
+130
+00:04:12,703 --> 00:04:15,102
+of fifteen controls produced false regions
+
+131
+00:04:15,663 --> 00:04:18,042
+these are development diagnostics on synthetic
+
+132
+00:04:18,163 --> 00:04:19,022
+archival audio
+
+133
+00:04:19,543 --> 00:04:20,902
+not a held out estimate of
+
+134
+00:04:20,962 --> 00:04:21,822
+student accuracy
+
+135
+00:04:22,702 --> 00:04:25,122
+we also checked keyboard accessible controls
+
+136
+00:04:25,562 --> 00:04:26,502
+mobile overflow
+
+137
+00:04:26,942 --> 00:04:28,302
+escaped text inputs
+
+138
+00:04:28,782 --> 00:04:29,602
+network behavior
+
+139
+00:04:30,022 --> 00:04:31,502
+and dependency vulnerabilities
+
+140
+00:04:32,202 --> 00:04:34,262
+the source includes setup instructions
+
+141
+00:04:34,623 --> 00:04:35,062
+tests
+
+142
+00:04:35,423 --> 00:04:36,402
+security boundaries
+
+143
+00:04:36,842 --> 00:04:38,222
+and a short technical report
+
+144
+00:04:39,123 --> 00:04:41,002
+the important next step is broader
+
+145
+00:04:41,082 --> 00:04:42,802
+validation with real students
+
+146
+00:04:43,342 --> 00:04:45,082
+accents and recording devices
+
+147
+00:04:45,982 --> 00:04:48,102
+cadence lab makes the evidence visible
+
+148
+00:04:48,462 --> 00:04:50,282
+while keeping its assumptions visible too
+
+149
+00:04:51,303 --> 00:04:53,602
+this demo uses a disclosed stock
+
+150
+00:04:53,743 --> 00:04:55,162
+synthetic narration voice

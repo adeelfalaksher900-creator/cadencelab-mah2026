@@ -1,0 +1,62 @@
+[
+  {
+    "start": 0.08250000000000021,
+    "end": 23.182499999999997,
+    "text": "This is Cadence Lab, an evidence workbench for student speakers and coaches. It is our Track C project for the Multimodal AI Hackathon. The problem is simple: feedback like speak more clearly, or improve your pacing, does not tell a student which moment to practice. We turn measurable delivery changes into intervals you can hear, inspect, and try again."
+  },
+  {
+    "start": 24.3425,
+    "end": 41.6625,
+    "text": "The interface starts with two recordings of the same words. Teal is the reference, and orange is the practice recording. These examples are labeled synthetic modifications of archival speeches. They are not real student mistakes, and the score does not measure talent or persuasive truth."
+  },
+  {
+    "start": 42.682500000000005,
+    "end": 63.2425,
+    "text": "Here is a moderate pacing change. Selecting the finding highlights its interval and the corresponding transcript words. The evidence panel explains the word-rate ratio and the threshold behind the finding. Both recordings keep their own time axes. We compare matched words, rather than stretching one waveform to fit the other."
+  },
+  {
+    "start": 64.5825,
+    "end": 84.0425,
+    "text": "Now switch to relative energy. This example lowers a phrase's volume, while preserving the transcript. The explanation reports a decibel difference after each recording is normalized. The next-step suggestion is focused: repeat that phrase with steady projection, and keep the microphone distance consistent."
+  },
+  {
+    "start": 85.3425,
+    "end": 103.88250000000001,
+    "text": "An extended pause is another measurable change. The panel compares the gaps between the same aligned words. You can seek directly to a word, or listen to the reference and practice region. The purpose is to make the evidence easy to check, not to prescribe one correct expressive style."
+  },
+  {
+    "start": 105.10249999999999,
+    "end": 124.5625,
+    "text": "Pitch is centered in semitones, and a robust offset across matched words reduces whole-recording pitch differences. A local pitch change remains visible. Whole-recording gain and pitch controls also test the limits of normalization. We keep false detections in the results instead of hiding them."
+  },
+  {
+    "start": 125.8425,
+    "end": 146.30249999999998,
+    "text": "Noise needs special care. When phonetic alignment becomes unreliable, the acoustic texture can still be measured. The system compares spectral flatness with the reference's speech-frame baseline. In a partial report, it withholds the word-based score and avoids presenting uncertain word timestamps as reliable evidence."
+  },
+  {
+    "start": 147.4425,
+    "end": 174.2625,
+    "text": "Real upload analysis runs in this browser. Choose a reference, a practice file, and their shared English transcript. The first run downloads a pinned, quantized speech model. A worker performs acoustic inference and genuine transcript-constrained C T C forced alignment. It does not allocate equal time to every word. No audio-upload endpoint, account, or paid inference service is required."
+  },
+  {
+    "start": 175.2425,
+    "end": 200.5025,
+    "text": "The pipeline then extracts energy, pitch, pauses and spectral features. Python evaluation also computes thirteen mel-frequency cepstral coefficients. Every measured finding includes its interval and numerical reason. You can export the evidence as a reproducible report. A mismatch or insufficient acoustic support produces an error or a clearly marked partial report."
+  },
+  {
+    "start": 201.60250000000002,
+    "end": 227.3825,
+    "text": "Our dataset contains ninety paired cases from five excerpts, two speakers, and three speeches. Each transcript has three levels of pacing, energy, pauses, noise and pitch changes, plus three controls. Injection labels come from the transformation's sample boundaries, independently of what the detector predicts. Source links, recording hashes and construction scripts are documented."
+  },
+  {
+    "start": 228.38250000000002,
+    "end": 255.42249999999999,
+    "text": "The evaluation page includes every case, including misses and abstentions. Forty of fifty moderate and strong cases were localized at the declared overlap threshold. Across all severity levels, forty-three of seventy-five cases matched. Two of fifteen controls produced false regions. These are development diagnostics on synthetic archival audio, not a held-out estimate of student accuracy."
+  },
+  {
+    "start": 256.3025,
+    "end": 288.7625,
+    "text": "We also checked keyboard-accessible controls, mobile overflow, escaped text inputs, network behavior and dependency vulnerabilities. The source includes setup instructions, tests, security boundaries and a short technical report. The important next step is broader validation with real students, accents and recording devices. Cadence Lab makes the evidence visible, while keeping its assumptions visible too. This demo uses a disclosed stock synthetic narration voice."
+  }
+]

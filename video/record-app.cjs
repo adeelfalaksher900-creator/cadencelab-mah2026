@@ -5,7 +5,7 @@ const {chromium}=require('playwright'),fs=require('fs'),path=require('path');
  await p.route('https://huggingface.co/**/model_quantized.onnx',r=>r.fulfill({status:302,headers:{'Access-Control-Allow-Origin':'*','Location':'http://127.0.0.1:4178/test-model.onnx'}}));
  await p.goto('http://127.0.0.1:4178');await p.locator('.finding').first().waitFor();await p.evaluate(()=>{document.documentElement.style.zoom='1.1'});const start=Date.now();
  const wait=async t=>{let ms=t*1000-(Date.now()-start);if(ms>0)await p.waitForTimeout(ms)};
- const example=async (src,kind)=>{await p.locator('.example-controls select').nth(0).selectOption(src);await p.locator('.example-controls select').nth(1).selectOption(kind);await p.locator('.example-controls button').click();await p.waitForTimeout(550);await p.locator('.workbench').scrollIntoViewIfNeeded().catch(()=>{});};
+ const example=async (src,kind)=>{await p.locator('.example-controls select').nth(0).selectOption(src);await p.locator('.example-controls select').nth(1).selectOption(kind);await p.waitForTimeout(550);await p.locator('.workbench').scrollIntoViewIfNeeded().catch(()=>{});};
  const find=async n=>{await p.locator('.finding').nth(n).click();};
  await wait(24.4);await example('obama-20170114-1','control-0');
  await wait(42.9);await example('obama-20170114-1','pace-2');await find(0);

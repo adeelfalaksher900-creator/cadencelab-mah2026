@@ -1,0 +1,315 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><script src="assets/gsap.min.js"></script><style>
+@font-face{font-family:"DM Sans";src:url('assets/dm-sans.woff2')}*{box-sizing:border-box}body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#F8F6F1;font-family:"DM Sans",sans-serif;color:#202422}.scene,.clip{position:absolute;inset:0;width:1920px;height:1080px}.scene-content{width:100%;height:100%;padding:140px 140px;display:flex;flex-direction:column;justify-content:center;gap:34px}.kicker{color:#247D79;font-size:26px;letter-spacing:.12em}.title{font-family:Georgia,serif;font-size:112px;line-height:1.1;margin:0;max-width:1500px}.sub{font-size:37px;line-height:1.4;max-width:1400px;margin:0}.line{height:3px;width:160px;background:#B7482D}.scene{background:#F8F6F1}#intro{z-index:5}#outro{z-index:6;opacity:0}.caption{z-index:10;top:auto;bottom:86px;height:90px;display:flex;align-items:center;justify-content:center;padding:0 150px;text-align:center;font-size:44px;line-height:1.25;max-width:1920px}.caption span{max-width:1600px;padding:14px 26px;color:#F8F6F1;background:#202422;border-radius:5px}.listen{z-index:11;top:42px;left:120px;width:auto;height:auto;background:#F8F6F1;color:#247D79;padding:15px 22px;font-size:30px;border:1px solid #247D79}video{object-fit:contain} .footer{font-size:23px;color:#626760}
+</style></head><body><div id="root" data-composition-id="cadence-demo" data-start="0" data-duration="303" data-width="1920" data-height="1080" data-fps="30">
+<video id="app" class="clip" data-start="0" data-duration="303" data-track-index="0" src="assets/app-footage.mp4" muted playsinline></video>
+<audio id="voice" data-start="0" data-duration="295.36" data-track-index="2" src="assets/narration.wav" data-volume="1"></audio>
+<div id="intro" class="scene"><div class="scene-content"><div class="kicker">MULTIMODAL AI HACKATHON / TRACK C</div><h1 class="title">Hear the difference.<br>See the evidence.</h1><div class="line"></div><p class="sub">CadenceLab — a local speech evidence workbench.</p></div></div>
+<div id="outro" class="scene"><div class="scene-content"><div class="kicker">CADENCELAB</div><h1 class="title">Practice the moment.<br>Keep the evidence.</h1><div class="line"></div><p class="sub">Working browser inference · 90 labeled pairs · Transparent evaluation</p><p class="footer">Stock synthetic narration disclosed. Development diagnostics; broader validation remains necessary.</p></div></div>
+<div id="cap0" class="caption clip" data-start="0.0825" data-duration="1.0400" data-track-index="4"><span>this is cadence lab</span></div>
+<div id="cap1" class="caption clip" data-start="1.3825" data-duration="1.9200" data-track-index="4"><span>an evidence workbench for student speakers</span></div>
+<div id="cap2" class="caption clip" data-start="3.3625" data-duration="0.5400" data-track-index="4"><span>and coaches</span></div>
+<div id="cap3" class="caption clip" data-start="4.5025" data-duration="0.7000" data-track-index="4"><span>it is our track c</span></div>
+<div id="cap4" class="caption clip" data-start="5.4825" data-duration="2.4400" data-track-index="4"><span>project for the multimodal ai hackathon</span></div>
+<div id="cap5" class="caption clip" data-start="8.5425" data-duration="1.0000" data-track-index="4"><span>the problem is simple</span></div>
+<div id="cap6" class="caption clip" data-start="10.0825" data-duration="0.7200" data-track-index="4"><span>feedback like</span></div>
+<div id="cap7" class="caption clip" data-start="11.1625" data-duration="0.9800" data-track-index="4"><span>speak more clearly</span></div>
+<div id="cap8" class="caption clip" data-start="12.4625" data-duration="1.3000" data-track-index="4"><span>or improve your pacing</span></div>
+<div id="cap9" class="caption clip" data-start="14.2425" data-duration="1.5200" data-track-index="4"><span>does not tell a student which</span></div>
+<div id="cap10" class="caption clip" data-start="15.9025" data-duration="0.9800" data-track-index="4"><span>moment to practice</span></div>
+<div id="cap11" class="caption clip" data-start="17.5625" data-duration="2.4200" data-track-index="4"><span>we turn measurable delivery changes into</span></div>
+<div id="cap12" class="caption clip" data-start="20.1625" data-duration="1.1000" data-track-index="4"><span>intervals you can hear</span></div>
+<div id="cap13" class="caption clip" data-start="21.7025" data-duration="0.5000" data-track-index="4"><span>inspect</span></div>
+<div id="cap14" class="caption clip" data-start="22.5225" data-duration="0.6600" data-track-index="4"><span>and try again</span></div>
+<div id="cap15" class="caption clip" data-start="24.3425" data-duration="1.7800" data-track-index="4"><span>the interface starts with two recordings</span></div>
+<div id="cap16" class="caption clip" data-start="26.1625" data-duration="0.8600" data-track-index="4"><span>of the same words</span></div>
+<div id="cap17" class="caption clip" data-start="27.5625" data-duration="2.1000" data-track-index="4"><span>teal is the reference and orange</span></div>
+<div id="cap18" class="caption clip" data-start="29.7625" data-duration="1.0600" data-track-index="4"><span>is the practice recording</span></div>
+<div id="cap19" class="caption clip" data-start="31.5225" data-duration="1.1600" data-track-index="4"><span>these examples are labeled</span></div>
+<div id="cap20" class="caption clip" data-start="32.9625" data-duration="2.7600" data-track-index="4"><span>synthetic modifications of archival speeches</span></div>
+<div id="cap21" class="caption clip" data-start="36.2225" data-duration="1.9600" data-track-index="4"><span>they are not real student mistakes</span></div>
+<div id="cap22" class="caption clip" data-start="38.4225" data-duration="1.5200" data-track-index="4"><span>and the score does not measure</span></div>
+<div id="cap23" class="caption clip" data-start="40.0225" data-duration="1.6400" data-track-index="4"><span>talent or persuasive truth</span></div>
+<div id="cap24" class="caption clip" data-start="42.6825" data-duration="1.8000" data-track-index="4"><span>here is a moderate pacing change</span></div>
+<div id="cap25" class="caption clip" data-start="45.1625" data-duration="2.3400" data-track-index="4"><span>selecting the finding highlights its interval</span></div>
+<div id="cap26" class="caption clip" data-start="47.6625" data-duration="1.9400" data-track-index="4"><span>and the corresponding transcript words</span></div>
+<div id="cap27" class="caption clip" data-start="50.2825" data-duration="1.9800" data-track-index="4"><span>the evidence panel explains the word</span></div>
+<div id="cap28" class="caption clip" data-start="52.3425" data-duration="0.6400" data-track-index="4"><span>rate ratio</span></div>
+<div id="cap29" class="caption clip" data-start="53.3225" data-duration="1.7600" data-track-index="4"><span>and the threshold behind the finding</span></div>
+<div id="cap30" class="caption clip" data-start="56.0225" data-duration="1.8800" data-track-index="4"><span>both recordings keep their own time</span></div>
+<div id="cap31" class="caption clip" data-start="58.0225" data-duration="0.3800" data-track-index="4"><span>axes</span></div>
+<div id="cap32" class="caption clip" data-start="58.9825" data-duration="1.6000" data-track-index="4"><span>we compare matched words</span></div>
+<div id="cap33" class="caption clip" data-start="60.8425" data-duration="1.8400" data-track-index="4"><span>rather than stretching one waveform to</span></div>
+<div id="cap34" class="caption clip" data-start="62.7425" data-duration="0.5000" data-track-index="4"><span>fit the other</span></div>
+<div id="cap35" class="caption clip" data-start="64.5825" data-duration="1.5000" data-track-index="4"><span>now switch to relative energy</span></div>
+<div id="cap36" class="caption clip" data-start="66.9025" data-duration="2.1600" data-track-index="4"><span>this example lowers a phrase&#x27;s volume</span></div>
+<div id="cap37" class="caption clip" data-start="69.2625" data-duration="1.4600" data-track-index="4"><span>while preserving the transcript</span></div>
+<div id="cap38" class="caption clip" data-start="71.4625" data-duration="2.3000" data-track-index="4"><span>the explanation reports a decibel difference</span></div>
+<div id="cap39" class="caption clip" data-start="73.9025" data-duration="1.7000" data-track-index="4"><span>after each recording is normalized</span></div>
+<div id="cap40" class="caption clip" data-start="76.6425" data-duration="2.1000" data-track-index="4"><span>the next step suggestion is focused</span></div>
+<div id="cap41" class="caption clip" data-start="79.2825" data-duration="2.3800" data-track-index="4"><span>repeat that phrase with steady projection</span></div>
+<div id="cap42" class="caption clip" data-start="81.9025" data-duration="2.1400" data-track-index="4"><span>and keep the microphone distance consistent</span></div>
+<div id="cap43" class="caption clip" data-start="91.7425" data-duration="2.2200" data-track-index="4"><span>an extended pause is another measurable</span></div>
+<div id="cap44" class="caption clip" data-start="94.0225" data-duration="0.3800" data-track-index="4"><span>change</span></div>
+<div id="cap45" class="caption clip" data-start="95.1025" data-duration="1.9200" data-track-index="4"><span>the panel compares the gaps between</span></div>
+<div id="cap46" class="caption clip" data-start="97.0825" data-duration="1.3400" data-track-index="4"><span>the same aligned words</span></div>
+<div id="cap47" class="caption clip" data-start="99.0625" data-duration="1.3200" data-track-index="4"><span>you can seek directly to a</span></div>
+<div id="cap48" class="caption clip" data-start="100.4425" data-duration="0.3400" data-track-index="4"><span>word</span></div>
+<div id="cap49" class="caption clip" data-start="101.3225" data-duration="1.2600" data-track-index="4"><span>or listen to the reference and</span></div>
+<div id="cap50" class="caption clip" data-start="102.6425" data-duration="0.7800" data-track-index="4"><span>practice region</span></div>
+<div id="cap51" class="caption clip" data-start="104.3625" data-duration="1.2400" data-track-index="4"><span>the purpose is to make the</span></div>
+<div id="cap52" class="caption clip" data-start="105.7225" data-duration="1.1400" data-track-index="4"><span>evidence easy to check</span></div>
+<div id="cap53" class="caption clip" data-start="107.4425" data-duration="0.9400" data-track-index="4"><span>not to prescribe</span></div>
+<div id="cap54" class="caption clip" data-start="108.6825" data-duration="1.6000" data-track-index="4"><span>one correct expressive style</span></div>
+<div id="cap55" class="caption clip" data-start="111.5025" data-duration="1.6600" data-track-index="4"><span>pitch is centered in semitones</span></div>
+<div id="cap56" class="caption clip" data-start="113.5825" data-duration="2.1000" data-track-index="4"><span>and a robust offset across matched</span></div>
+<div id="cap57" class="caption clip" data-start="115.7825" data-duration="0.3600" data-track-index="4"><span>words</span></div>
+<div id="cap58" class="caption clip" data-start="116.5225" data-duration="2.2200" data-track-index="4"><span>reduces whole recording pitch differences</span></div>
+<div id="cap59" class="caption clip" data-start="119.6025" data-duration="2.0600" data-track-index="4"><span>a local pitch change remains visible</span></div>
+<div id="cap60" class="caption clip" data-start="122.6425" data-duration="2.4000" data-track-index="4"><span>whole recording gain and pitch controls</span></div>
+<div id="cap61" class="caption clip" data-start="125.2425" data-duration="2.0200" data-track-index="4"><span>also test the limits of normalization</span></div>
+<div id="cap62" class="caption clip" data-start="128.0425" data-duration="1.4600" data-track-index="4"><span>we keep false detections in the</span></div>
+<div id="cap63" class="caption clip" data-start="129.5425" data-duration="1.4200" data-track-index="4"><span>results instead of hiding them</span></div>
+<div id="cap64" class="caption clip" data-start="132.2425" data-duration="1.5400" data-track-index="4"><span>noise needs special care</span></div>
+<div id="cap65" class="caption clip" data-start="134.4825" data-duration="2.1600" data-track-index="4"><span>when phonetic alignment becomes unreliable</span></div>
+<div id="cap66" class="caption clip" data-start="137.0625" data-duration="1.7200" data-track-index="4"><span>the acoustic texture can still be</span></div>
+<div id="cap67" class="caption clip" data-start="138.8625" data-duration="0.3400" data-track-index="4"><span>measured</span></div>
+<div id="cap68" class="caption clip" data-start="139.8825" data-duration="2.3600" data-track-index="4"><span>the system compares spectral flatness with</span></div>
+<div id="cap69" class="caption clip" data-start="142.2825" data-duration="1.9600" data-track-index="4"><span>the reference&#x27;s speech frame baseline</span></div>
+<div id="cap70" class="caption clip" data-start="144.9625" data-duration="1.0400" data-track-index="4"><span>in a partial report</span></div>
+<div id="cap71" class="caption clip" data-start="146.3825" data-duration="1.8000" data-track-index="4"><span>it withholds the word based score</span></div>
+<div id="cap72" class="caption clip" data-start="148.4425" data-duration="2.8800" data-track-index="4"><span>and avoids presenting uncertain word timestamps</span></div>
+<div id="cap73" class="caption clip" data-start="151.6425" data-duration="1.0600" data-track-index="4"><span>as reliable evidence</span></div>
+<div id="cap74" class="caption clip" data-start="153.8425" data-duration="2.0000" data-track-index="4"><span>real upload analysis runs in this</span></div>
+<div id="cap75" class="caption clip" data-start="155.9025" data-duration="0.4000" data-track-index="4"><span>browser</span></div>
+<div id="cap76" class="caption clip" data-start="156.8625" data-duration="0.8000" data-track-index="4"><span>choose a reference</span></div>
+<div id="cap77" class="caption clip" data-start="157.9625" data-duration="0.8800" data-track-index="4"><span>a practice file</span></div>
+<div id="cap78" class="caption clip" data-start="159.2025" data-duration="1.7000" data-track-index="4"><span>and their shared english transcript</span></div>
+<div id="cap79" class="caption clip" data-start="161.6625" data-duration="1.9000" data-track-index="4"><span>the first run downloads a pinned</span></div>
+<div id="cap80" class="caption clip" data-start="163.8225" data-duration="1.5000" data-track-index="4"><span>quantized speech model</span></div>
+<div id="cap81" class="caption clip" data-start="166.1425" data-duration="1.8200" data-track-index="4"><span>a worker performs acoustic inference</span></div>
+<div id="cap82" class="caption clip" data-start="168.2625" data-duration="2.2600" data-track-index="4"><span>and genuine transcript constrained c</span></div>
+<div id="cap83" class="caption clip" data-start="170.7825" data-duration="0.0400" data-track-index="4"><span>t</span></div>
+<div id="cap84" class="caption clip" data-start="171.1025" data-duration="0.0200" data-track-index="4"><span>c</span></div>
+<div id="cap85" class="caption clip" data-start="171.4825" data-duration="0.8600" data-track-index="4"><span>forced alignment</span></div>
+<div id="cap86" class="caption clip" data-start="173.0225" data-duration="1.7000" data-track-index="4"><span>it does not allocate equal time</span></div>
+<div id="cap87" class="caption clip" data-start="174.7825" data-duration="0.6800" data-track-index="4"><span>to every word</span></div>
+<div id="cap88" class="caption clip" data-start="176.2025" data-duration="1.5800" data-track-index="4"><span>no audio upload endpoint</span></div>
+<div id="cap89" class="caption clip" data-start="178.0625" data-duration="2.0200" data-track-index="4"><span>account or paid inference service is</span></div>
+<div id="cap90" class="caption clip" data-start="180.1625" data-duration="0.5000" data-track-index="4"><span>required</span></div>
+<div id="cap91" class="caption clip" data-start="181.6425" data-duration="1.7600" data-track-index="4"><span>the pipeline then extracts energy</span></div>
+<div id="cap92" class="caption clip" data-start="183.8225" data-duration="0.2800" data-track-index="4"><span>pitch</span></div>
+<div id="cap93" class="caption clip" data-start="184.5825" data-duration="1.6200" data-track-index="4"><span>pauses and spectral features</span></div>
+<div id="cap94" class="caption clip" data-start="187.0025" data-duration="2.9800" data-track-index="4"><span>python evaluation also computes thirteen mel</span></div>
+<div id="cap95" class="caption clip" data-start="190.0825" data-duration="1.6600" data-track-index="4"><span>frequency cepstral coefficients</span></div>
+<div id="cap96" class="caption clip" data-start="192.7025" data-duration="2.1800" data-track-index="4"><span>every measured finding includes its interval</span></div>
+<div id="cap97" class="caption clip" data-start="195.2025" data-duration="1.0400" data-track-index="4"><span>and numerical reason</span></div>
+<div id="cap98" class="caption clip" data-start="197.0025" data-duration="1.4800" data-track-index="4"><span>you can export the evidence as</span></div>
+<div id="cap99" class="caption clip" data-start="198.5625" data-duration="1.2600" data-track-index="4"><span>a reproducible report</span></div>
+<div id="cap100" class="caption clip" data-start="200.6225" data-duration="2.6200" data-track-index="4"><span>a mismatch or insufficient acoustic support</span></div>
+<div id="cap101" class="caption clip" data-start="203.6225" data-duration="0.8800" data-track-index="4"><span>produces an error</span></div>
+<div id="cap102" class="caption clip" data-start="204.9225" data-duration="1.9800" data-track-index="4"><span>or a clearly marked partial report</span></div>
+<div id="cap103" class="caption clip" data-start="208.0025" data-duration="2.5000" data-track-index="4"><span>our dataset contains ninety paired cases</span></div>
+<div id="cap104" class="caption clip" data-start="210.5825" data-duration="1.0800" data-track-index="4"><span>from five excerpts</span></div>
+<div id="cap105" class="caption clip" data-start="212.1425" data-duration="1.7200" data-track-index="4"><span>two speakers and three speeches</span></div>
+<div id="cap106" class="caption clip" data-start="214.6425" data-duration="1.9400" data-track-index="4"><span>each transcript has three levels of</span></div>
+<div id="cap107" class="caption clip" data-start="216.6625" data-duration="0.4400" data-track-index="4"><span>pacing</span></div>
+<div id="cap108" class="caption clip" data-start="217.6225" data-duration="0.3600" data-track-index="4"><span>energy</span></div>
+<div id="cap109" class="caption clip" data-start="218.4425" data-duration="0.5200" data-track-index="4"><span>pauses</span></div>
+<div id="cap110" class="caption clip" data-start="219.4625" data-duration="1.3800" data-track-index="4"><span>noise and pitch changes</span></div>
+<div id="cap111" class="caption clip" data-start="221.2425" data-duration="1.1800" data-track-index="4"><span>plus three controls</span></div>
+<div id="cap112" class="caption clip" data-start="223.3025" data-duration="2.2600" data-track-index="4"><span>injection labels come from the transformation&#x27;s</span></div>
+<div id="cap113" class="caption clip" data-start="225.6425" data-duration="0.8400" data-track-index="4"><span>sample boundaries</span></div>
+<div id="cap114" class="caption clip" data-start="226.9825" data-duration="1.9600" data-track-index="4"><span>independently of what the detector predicts</span></div>
+<div id="cap115" class="caption clip" data-start="229.8225" data-duration="0.6000" data-track-index="4"><span>source links</span></div>
+<div id="cap116" class="caption clip" data-start="230.7025" data-duration="0.8800" data-track-index="4"><span>recording hashes</span></div>
+<div id="cap117" class="caption clip" data-start="231.9225" data-duration="1.8600" data-track-index="4"><span>and construction scripts are documented</span></div>
+<div id="cap118" class="caption clip" data-start="234.7825" data-duration="2.4600" data-track-index="4"><span>the evaluation page includes every case</span></div>
+<div id="cap119" class="caption clip" data-start="237.6625" data-duration="0.8000" data-track-index="4"><span>including misses</span></div>
+<div id="cap120" class="caption clip" data-start="238.7625" data-duration="0.7600" data-track-index="4"><span>and abstentions</span></div>
+<div id="cap121" class="caption clip" data-start="240.4425" data-duration="2.0600" data-track-index="4"><span>forty of fifty moderate and strong</span></div>
+<div id="cap122" class="caption clip" data-start="242.5825" data-duration="0.4400" data-track-index="4"><span>cases</span></div>
+<div id="cap123" class="caption clip" data-start="243.3825" data-duration="2.1400" data-track-index="4"><span>were localized at the declared overlap</span></div>
+<div id="cap124" class="caption clip" data-start="245.6425" data-duration="0.4800" data-track-index="4"><span>threshold</span></div>
+<div id="cap125" class="caption clip" data-start="246.9425" data-duration="1.5600" data-track-index="4"><span>across all severity levels</span></div>
+<div id="cap126" class="caption clip" data-start="248.9225" data-duration="2.0600" data-track-index="4"><span>forty three of seventy five cases</span></div>
+<div id="cap127" class="caption clip" data-start="251.1025" data-duration="0.3600" data-track-index="4"><span>matched</span></div>
+<div id="cap128" class="caption clip" data-start="252.2825" data-duration="0.1600" data-track-index="4"><span>two</span></div>
+<div id="cap129" class="caption clip" data-start="252.7025" data-duration="2.4000" data-track-index="4"><span>of fifteen controls produced false regions</span></div>
+<div id="cap130" class="caption clip" data-start="255.6625" data-duration="2.3800" data-track-index="4"><span>these are development diagnostics on synthetic</span></div>
+<div id="cap131" class="caption clip" data-start="258.1625" data-duration="0.8600" data-track-index="4"><span>archival audio</span></div>
+<div id="cap132" class="caption clip" data-start="259.5425" data-duration="1.3600" data-track-index="4"><span>not a held out estimate of</span></div>
+<div id="cap133" class="caption clip" data-start="260.9625" data-duration="0.8600" data-track-index="4"><span>student accuracy</span></div>
+<div id="cap134" class="caption clip" data-start="262.7025" data-duration="2.4200" data-track-index="4"><span>we also checked keyboard accessible controls</span></div>
+<div id="cap135" class="caption clip" data-start="265.5625" data-duration="0.9400" data-track-index="4"><span>mobile overflow</span></div>
+<div id="cap136" class="caption clip" data-start="266.9425" data-duration="1.3600" data-track-index="4"><span>escaped text inputs</span></div>
+<div id="cap137" class="caption clip" data-start="268.7825" data-duration="0.8200" data-track-index="4"><span>network behavior</span></div>
+<div id="cap138" class="caption clip" data-start="270.0225" data-duration="1.4800" data-track-index="4"><span>and dependency vulnerabilities</span></div>
+<div id="cap139" class="caption clip" data-start="272.2025" data-duration="2.0600" data-track-index="4"><span>the source includes setup instructions</span></div>
+<div id="cap140" class="caption clip" data-start="274.6225" data-duration="0.4400" data-track-index="4"><span>tests</span></div>
+<div id="cap141" class="caption clip" data-start="275.4225" data-duration="0.9800" data-track-index="4"><span>security boundaries</span></div>
+<div id="cap142" class="caption clip" data-start="276.8425" data-duration="1.3800" data-track-index="4"><span>and a short technical report</span></div>
+<div id="cap143" class="caption clip" data-start="279.1225" data-duration="1.8800" data-track-index="4"><span>the important next step is broader</span></div>
+<div id="cap144" class="caption clip" data-start="281.0825" data-duration="1.7200" data-track-index="4"><span>validation with real students</span></div>
+<div id="cap145" class="caption clip" data-start="283.3425" data-duration="1.7400" data-track-index="4"><span>accents and recording devices</span></div>
+<div id="cap146" class="caption clip" data-start="285.9825" data-duration="2.1200" data-track-index="4"><span>cadence lab makes the evidence visible</span></div>
+<div id="cap147" class="caption clip" data-start="288.4625" data-duration="1.8200" data-track-index="4"><span>while keeping its assumptions visible too</span></div>
+<div id="cap148" class="caption clip" data-start="291.3025" data-duration="2.3000" data-track-index="4"><span>this demo uses a disclosed stock</span></div>
+<div id="cap149" class="caption clip" data-start="293.7425" data-duration="1.4200" data-track-index="4"><span>synthetic narration voice</span></div>
+<audio id="reference" data-start="84.5125" data-duration="1.96" data-media-start="5.3425" data-track-index="3" src="assets/reference.flac" data-volume="1"></audio>
+<audio id="practice" data-start="87.2625" data-duration="1.9799999999999995" data-media-start="5.3425" data-track-index="3" src="assets/practice.flac" data-volume="1"></audio>
+<div id="ref-label" class="clip listen" data-start="84.5125" data-duration="1.96" data-track-index="5">Listen: reference phrase</div><div id="pra-label" class="clip listen" data-start="87.2625" data-duration="1.9799999999999995" data-track-index="5">Listen: quieter practice phrase</div>
+</div><script>window.__timelines=window.__timelines||{};const tl=gsap.timeline({paused:true});
+tl.from('#intro .kicker',{opacity:0,x:-25,duration:.5,ease:'sine.out'},.15);tl.from('#intro .title',{opacity:0,y:30,duration:.7,ease:'power2.out'},.3);tl.from('#intro .line',{scaleX:0,duration:.5,ease:'expo.out'},.55);tl.from('#intro .sub',{opacity:0,y:18,duration:.6,ease:'power3.out'},.7);
+tl.to('#intro',{opacity:0,duration:.7,ease:'sine.inOut'},5.3);tl.from('#app',{opacity:0,duration:.7,ease:'sine.inOut'},5.3);
+tl.to('#outro',{opacity:1,duration:.7,ease:'sine.inOut'},296);tl.from('#outro .kicker',{opacity:0,x:-20,duration:.5,ease:'sine.out'},296.2);tl.from('#outro .title',{opacity:0,y:25,duration:.7,ease:'power2.out'},296.4);tl.from('#outro .line',{scaleX:0,duration:.5,ease:'expo.out'},296.6);tl.from('#outro .sub',{opacity:0,y:20,duration:.6,ease:'power3.out'},296.8);tl.from('#outro .footer',{opacity:0,duration:.6,ease:'sine.out'},297);
+tl.from("#cap0",{opacity:0,y:8,duration:.1,ease:"sine.out"},0.08250000000000021);tl.set("#cap0",{opacity:0},1.1224999999999998);
+tl.from("#cap1",{opacity:0,y:8,duration:.1,ease:"sine.out"},1.3825000000000003);tl.set("#cap1",{opacity:0},3.3024999999999998);
+tl.from("#cap2",{opacity:0,y:8,duration:.1,ease:"sine.out"},3.3625000000000003);tl.set("#cap2",{opacity:0},3.9025);
+tl.from("#cap3",{opacity:0,y:8,duration:.1,ease:"sine.out"},4.5025);tl.set("#cap3",{opacity:0},5.2025);
+tl.from("#cap4",{opacity:0,y:8,duration:.1,ease:"sine.out"},5.4825);tl.set("#cap4",{opacity:0},7.922499999999999);
+tl.from("#cap5",{opacity:0,y:8,duration:.1,ease:"sine.out"},8.5425);tl.set("#cap5",{opacity:0},9.5425);
+tl.from("#cap6",{opacity:0,y:8,duration:.1,ease:"sine.out"},10.0825);tl.set("#cap6",{opacity:0},10.8025);
+tl.from("#cap7",{opacity:0,y:8,duration:.1,ease:"sine.out"},11.1625);tl.set("#cap7",{opacity:0},12.1425);
+tl.from("#cap8",{opacity:0,y:8,duration:.1,ease:"sine.out"},12.4625);tl.set("#cap8",{opacity:0},13.7625);
+tl.from("#cap9",{opacity:0,y:8,duration:.1,ease:"sine.out"},14.2425);tl.set("#cap9",{opacity:0},15.762500000000001);
+tl.from("#cap10",{opacity:0,y:8,duration:.1,ease:"sine.out"},15.9025);tl.set("#cap10",{opacity:0},16.8825);
+tl.from("#cap11",{opacity:0,y:8,duration:.1,ease:"sine.out"},17.5625);tl.set("#cap11",{opacity:0},19.9825);
+tl.from("#cap12",{opacity:0,y:8,duration:.1,ease:"sine.out"},20.1625);tl.set("#cap12",{opacity:0},21.262500000000003);
+tl.from("#cap13",{opacity:0,y:8,duration:.1,ease:"sine.out"},21.7025);tl.set("#cap13",{opacity:0},22.2025);
+tl.from("#cap14",{opacity:0,y:8,duration:.1,ease:"sine.out"},22.5225);tl.set("#cap14",{opacity:0},23.182499999999997);
+tl.from("#cap15",{opacity:0,y:8,duration:.1,ease:"sine.out"},24.3425);tl.set("#cap15",{opacity:0},26.122500000000002);
+tl.from("#cap16",{opacity:0,y:8,duration:.1,ease:"sine.out"},26.1625);tl.set("#cap16",{opacity:0},27.0225);
+tl.from("#cap17",{opacity:0,y:8,duration:.1,ease:"sine.out"},27.5625);tl.set("#cap17",{opacity:0},29.6625);
+tl.from("#cap18",{opacity:0,y:8,duration:.1,ease:"sine.out"},29.762500000000003);tl.set("#cap18",{opacity:0},30.822499999999998);
+tl.from("#cap19",{opacity:0,y:8,duration:.1,ease:"sine.out"},31.5225);tl.set("#cap19",{opacity:0},32.6825);
+tl.from("#cap20",{opacity:0,y:8,duration:.1,ease:"sine.out"},32.9625);tl.set("#cap20",{opacity:0},35.7225);
+tl.from("#cap21",{opacity:0,y:8,duration:.1,ease:"sine.out"},36.222500000000004);tl.set("#cap21",{opacity:0},38.1825);
+tl.from("#cap22",{opacity:0,y:8,duration:.1,ease:"sine.out"},38.4225);tl.set("#cap22",{opacity:0},39.942499999999995);
+tl.from("#cap23",{opacity:0,y:8,duration:.1,ease:"sine.out"},40.0225);tl.set("#cap23",{opacity:0},41.6625);
+tl.from("#cap24",{opacity:0,y:8,duration:.1,ease:"sine.out"},42.682500000000005);tl.set("#cap24",{opacity:0},44.482499999999995);
+tl.from("#cap25",{opacity:0,y:8,duration:.1,ease:"sine.out"},45.1625);tl.set("#cap25",{opacity:0},47.5025);
+tl.from("#cap26",{opacity:0,y:8,duration:.1,ease:"sine.out"},47.6625);tl.set("#cap26",{opacity:0},49.6025);
+tl.from("#cap27",{opacity:0,y:8,duration:.1,ease:"sine.out"},50.2825);tl.set("#cap27",{opacity:0},52.262499999999996);
+tl.from("#cap28",{opacity:0,y:8,duration:.1,ease:"sine.out"},52.3425);tl.set("#cap28",{opacity:0},52.982499999999995);
+tl.from("#cap29",{opacity:0,y:8,duration:.1,ease:"sine.out"},53.322500000000005);tl.set("#cap29",{opacity:0},55.082499999999996);
+tl.from("#cap30",{opacity:0,y:8,duration:.1,ease:"sine.out"},56.0225);tl.set("#cap30",{opacity:0},57.902499999999996);
+tl.from("#cap31",{opacity:0,y:8,duration:.1,ease:"sine.out"},58.0225);tl.set("#cap31",{opacity:0},58.402499999999996);
+tl.from("#cap32",{opacity:0,y:8,duration:.1,ease:"sine.out"},58.9825);tl.set("#cap32",{opacity:0},60.582499999999996);
+tl.from("#cap33",{opacity:0,y:8,duration:.1,ease:"sine.out"},60.8425);tl.set("#cap33",{opacity:0},62.6825);
+tl.from("#cap34",{opacity:0,y:8,duration:.1,ease:"sine.out"},62.7425);tl.set("#cap34",{opacity:0},63.2425);
+tl.from("#cap35",{opacity:0,y:8,duration:.1,ease:"sine.out"},64.5825);tl.set("#cap35",{opacity:0},66.08250000000001);
+tl.from("#cap36",{opacity:0,y:8,duration:.1,ease:"sine.out"},66.90249999999999);tl.set("#cap36",{opacity:0},69.0625);
+tl.from("#cap37",{opacity:0,y:8,duration:.1,ease:"sine.out"},69.26249999999999);tl.set("#cap37",{opacity:0},70.72250000000001);
+tl.from("#cap38",{opacity:0,y:8,duration:.1,ease:"sine.out"},71.46249999999999);tl.set("#cap38",{opacity:0},73.7625);
+tl.from("#cap39",{opacity:0,y:8,duration:.1,ease:"sine.out"},73.90249999999999);tl.set("#cap39",{opacity:0},75.6025);
+tl.from("#cap40",{opacity:0,y:8,duration:.1,ease:"sine.out"},76.6425);tl.set("#cap40",{opacity:0},78.7425);
+tl.from("#cap41",{opacity:0,y:8,duration:.1,ease:"sine.out"},79.2825);tl.set("#cap41",{opacity:0},81.66250000000001);
+tl.from("#cap42",{opacity:0,y:8,duration:.1,ease:"sine.out"},81.90249999999999);tl.set("#cap42",{opacity:0},84.0425);
+tl.from("#cap43",{opacity:0,y:8,duration:.1,ease:"sine.out"},91.7425);tl.set("#cap43",{opacity:0},93.9625);
+tl.from("#cap44",{opacity:0,y:8,duration:.1,ease:"sine.out"},94.0225);tl.set("#cap44",{opacity:0},94.40250000000002);
+tl.from("#cap45",{opacity:0,y:8,duration:.1,ease:"sine.out"},95.1025);tl.set("#cap45",{opacity:0},97.02250000000001);
+tl.from("#cap46",{opacity:0,y:8,duration:.1,ease:"sine.out"},97.0825);tl.set("#cap46",{opacity:0},98.42250000000001);
+tl.from("#cap47",{opacity:0,y:8,duration:.1,ease:"sine.out"},99.0625);tl.set("#cap47",{opacity:0},100.38250000000001);
+tl.from("#cap48",{opacity:0,y:8,duration:.1,ease:"sine.out"},100.4425);tl.set("#cap48",{opacity:0},100.78250000000001);
+tl.from("#cap49",{opacity:0,y:8,duration:.1,ease:"sine.out"},101.3225);tl.set("#cap49",{opacity:0},102.58250000000001);
+tl.from("#cap50",{opacity:0,y:8,duration:.1,ease:"sine.out"},102.6425);tl.set("#cap50",{opacity:0},103.42250000000001);
+tl.from("#cap51",{opacity:0,y:8,duration:.1,ease:"sine.out"},104.3625);tl.set("#cap51",{opacity:0},105.6025);
+tl.from("#cap52",{opacity:0,y:8,duration:.1,ease:"sine.out"},105.7225);tl.set("#cap52",{opacity:0},106.86250000000001);
+tl.from("#cap53",{opacity:0,y:8,duration:.1,ease:"sine.out"},107.4425);tl.set("#cap53",{opacity:0},108.38250000000001);
+tl.from("#cap54",{opacity:0,y:8,duration:.1,ease:"sine.out"},108.6825);tl.set("#cap54",{opacity:0},110.28250000000001);
+tl.from("#cap55",{opacity:0,y:8,duration:.1,ease:"sine.out"},111.5025);tl.set("#cap55",{opacity:0},113.16250000000001);
+tl.from("#cap56",{opacity:0,y:8,duration:.1,ease:"sine.out"},113.5825);tl.set("#cap56",{opacity:0},115.6825);
+tl.from("#cap57",{opacity:0,y:8,duration:.1,ease:"sine.out"},115.7825);tl.set("#cap57",{opacity:0},116.14250000000001);
+tl.from("#cap58",{opacity:0,y:8,duration:.1,ease:"sine.out"},116.5225);tl.set("#cap58",{opacity:0},118.7425);
+tl.from("#cap59",{opacity:0,y:8,duration:.1,ease:"sine.out"},119.6025);tl.set("#cap59",{opacity:0},121.66250000000001);
+tl.from("#cap60",{opacity:0,y:8,duration:.1,ease:"sine.out"},122.6425);tl.set("#cap60",{opacity:0},125.0425);
+tl.from("#cap61",{opacity:0,y:8,duration:.1,ease:"sine.out"},125.2425);tl.set("#cap61",{opacity:0},127.26250000000002);
+tl.from("#cap62",{opacity:0,y:8,duration:.1,ease:"sine.out"},128.0425);tl.set("#cap62",{opacity:0},129.5025);
+tl.from("#cap63",{opacity:0,y:8,duration:.1,ease:"sine.out"},129.5425);tl.set("#cap63",{opacity:0},130.9625);
+tl.from("#cap64",{opacity:0,y:8,duration:.1,ease:"sine.out"},132.2425);tl.set("#cap64",{opacity:0},133.7825);
+tl.from("#cap65",{opacity:0,y:8,duration:.1,ease:"sine.out"},134.48250000000002);tl.set("#cap65",{opacity:0},136.64249999999998);
+tl.from("#cap66",{opacity:0,y:8,duration:.1,ease:"sine.out"},137.06250000000003);tl.set("#cap66",{opacity:0},138.7825);
+tl.from("#cap67",{opacity:0,y:8,duration:.1,ease:"sine.out"},138.8625);tl.set("#cap67",{opacity:0},139.2025);
+tl.from("#cap68",{opacity:0,y:8,duration:.1,ease:"sine.out"},139.88250000000002);tl.set("#cap68",{opacity:0},142.2425);
+tl.from("#cap69",{opacity:0,y:8,duration:.1,ease:"sine.out"},142.28250000000003);tl.set("#cap69",{opacity:0},144.2425);
+tl.from("#cap70",{opacity:0,y:8,duration:.1,ease:"sine.out"},144.9625);tl.set("#cap70",{opacity:0},146.0025);
+tl.from("#cap71",{opacity:0,y:8,duration:.1,ease:"sine.out"},146.38250000000002);tl.set("#cap71",{opacity:0},148.1825);
+tl.from("#cap72",{opacity:0,y:8,duration:.1,ease:"sine.out"},148.44250000000002);tl.set("#cap72",{opacity:0},151.3225);
+tl.from("#cap73",{opacity:0,y:8,duration:.1,ease:"sine.out"},151.6425);tl.set("#cap73",{opacity:0},152.7025);
+tl.from("#cap74",{opacity:0,y:8,duration:.1,ease:"sine.out"},153.8425);tl.set("#cap74",{opacity:0},155.8425);
+tl.from("#cap75",{opacity:0,y:8,duration:.1,ease:"sine.out"},155.9025);tl.set("#cap75",{opacity:0},156.3025);
+tl.from("#cap76",{opacity:0,y:8,duration:.1,ease:"sine.out"},156.8625);tl.set("#cap76",{opacity:0},157.6625);
+tl.from("#cap77",{opacity:0,y:8,duration:.1,ease:"sine.out"},157.9625);tl.set("#cap77",{opacity:0},158.8425);
+tl.from("#cap78",{opacity:0,y:8,duration:.1,ease:"sine.out"},159.20250000000001);tl.set("#cap78",{opacity:0},160.9025);
+tl.from("#cap79",{opacity:0,y:8,duration:.1,ease:"sine.out"},161.66250000000002);tl.set("#cap79",{opacity:0},163.5625);
+tl.from("#cap80",{opacity:0,y:8,duration:.1,ease:"sine.out"},163.82250000000002);tl.set("#cap80",{opacity:0},165.3225);
+tl.from("#cap81",{opacity:0,y:8,duration:.1,ease:"sine.out"},166.1425);tl.set("#cap81",{opacity:0},167.9625);
+tl.from("#cap82",{opacity:0,y:8,duration:.1,ease:"sine.out"},168.26250000000002);tl.set("#cap82",{opacity:0},170.5225);
+tl.from("#cap83",{opacity:0,y:8,duration:.1,ease:"sine.out"},170.78250000000003);tl.set("#cap83",{opacity:0},170.8225);
+tl.from("#cap84",{opacity:0,y:8,duration:.1,ease:"sine.out"},171.10250000000002);tl.set("#cap84",{opacity:0},171.1225);
+tl.from("#cap85",{opacity:0,y:8,duration:.1,ease:"sine.out"},171.48250000000002);tl.set("#cap85",{opacity:0},172.3425);
+tl.from("#cap86",{opacity:0,y:8,duration:.1,ease:"sine.out"},173.0225);tl.set("#cap86",{opacity:0},174.7225);
+tl.from("#cap87",{opacity:0,y:8,duration:.1,ease:"sine.out"},174.78250000000003);tl.set("#cap87",{opacity:0},175.4625);
+tl.from("#cap88",{opacity:0,y:8,duration:.1,ease:"sine.out"},176.20250000000001);tl.set("#cap88",{opacity:0},177.7825);
+tl.from("#cap89",{opacity:0,y:8,duration:.1,ease:"sine.out"},178.06250000000003);tl.set("#cap89",{opacity:0},180.0825);
+tl.from("#cap90",{opacity:0,y:8,duration:.1,ease:"sine.out"},180.16250000000002);tl.set("#cap90",{opacity:0},180.6625);
+tl.from("#cap91",{opacity:0,y:8,duration:.1,ease:"sine.out"},181.6425);tl.set("#cap91",{opacity:0},183.4025);
+tl.from("#cap92",{opacity:0,y:8,duration:.1,ease:"sine.out"},183.82250000000002);tl.set("#cap92",{opacity:0},184.1025);
+tl.from("#cap93",{opacity:0,y:8,duration:.1,ease:"sine.out"},184.5825);tl.set("#cap93",{opacity:0},186.2025);
+tl.from("#cap94",{opacity:0,y:8,duration:.1,ease:"sine.out"},187.00250000000003);tl.set("#cap94",{opacity:0},189.9825);
+tl.from("#cap95",{opacity:0,y:8,duration:.1,ease:"sine.out"},190.0825);tl.set("#cap95",{opacity:0},191.7425);
+tl.from("#cap96",{opacity:0,y:8,duration:.1,ease:"sine.out"},192.70250000000001);tl.set("#cap96",{opacity:0},194.8825);
+tl.from("#cap97",{opacity:0,y:8,duration:.1,ease:"sine.out"},195.20250000000001);tl.set("#cap97",{opacity:0},196.2425);
+tl.from("#cap98",{opacity:0,y:8,duration:.1,ease:"sine.out"},197.00250000000003);tl.set("#cap98",{opacity:0},198.4825);
+tl.from("#cap99",{opacity:0,y:8,duration:.1,ease:"sine.out"},198.56250000000003);tl.set("#cap99",{opacity:0},199.8225);
+tl.from("#cap100",{opacity:0,y:8,duration:.1,ease:"sine.out"},200.6225);tl.set("#cap100",{opacity:0},203.2425);
+tl.from("#cap101",{opacity:0,y:8,duration:.1,ease:"sine.out"},203.6225);tl.set("#cap101",{opacity:0},204.5025);
+tl.from("#cap102",{opacity:0,y:8,duration:.1,ease:"sine.out"},204.9225);tl.set("#cap102",{opacity:0},206.9025);
+tl.from("#cap103",{opacity:0,y:8,duration:.1,ease:"sine.out"},208.00250000000003);tl.set("#cap103",{opacity:0},210.5025);
+tl.from("#cap104",{opacity:0,y:8,duration:.1,ease:"sine.out"},210.5825);tl.set("#cap104",{opacity:0},211.6625);
+tl.from("#cap105",{opacity:0,y:8,duration:.1,ease:"sine.out"},212.1425);tl.set("#cap105",{opacity:0},213.86249999999998);
+tl.from("#cap106",{opacity:0,y:8,duration:.1,ease:"sine.out"},214.6425);tl.set("#cap106",{opacity:0},216.5825);
+tl.from("#cap107",{opacity:0,y:8,duration:.1,ease:"sine.out"},216.66250000000002);tl.set("#cap107",{opacity:0},217.1025);
+tl.from("#cap108",{opacity:0,y:8,duration:.1,ease:"sine.out"},217.6225);tl.set("#cap108",{opacity:0},217.9825);
+tl.from("#cap109",{opacity:0,y:8,duration:.1,ease:"sine.out"},218.44250000000002);tl.set("#cap109",{opacity:0},218.9625);
+tl.from("#cap110",{opacity:0,y:8,duration:.1,ease:"sine.out"},219.4625);tl.set("#cap110",{opacity:0},220.8425);
+tl.from("#cap111",{opacity:0,y:8,duration:.1,ease:"sine.out"},221.2425);tl.set("#cap111",{opacity:0},222.42249999999999);
+tl.from("#cap112",{opacity:0,y:8,duration:.1,ease:"sine.out"},223.3025);tl.set("#cap112",{opacity:0},225.5625);
+tl.from("#cap113",{opacity:0,y:8,duration:.1,ease:"sine.out"},225.6425);tl.set("#cap113",{opacity:0},226.4825);
+tl.from("#cap114",{opacity:0,y:8,duration:.1,ease:"sine.out"},226.98250000000002);tl.set("#cap114",{opacity:0},228.9425);
+tl.from("#cap115",{opacity:0,y:8,duration:.1,ease:"sine.out"},229.82250000000002);tl.set("#cap115",{opacity:0},230.42249999999999);
+tl.from("#cap116",{opacity:0,y:8,duration:.1,ease:"sine.out"},230.70250000000001);tl.set("#cap116",{opacity:0},231.5825);
+tl.from("#cap117",{opacity:0,y:8,duration:.1,ease:"sine.out"},231.9225);tl.set("#cap117",{opacity:0},233.7825);
+tl.from("#cap118",{opacity:0,y:8,duration:.1,ease:"sine.out"},234.78250000000003);tl.set("#cap118",{opacity:0},237.2425);
+tl.from("#cap119",{opacity:0,y:8,duration:.1,ease:"sine.out"},237.66250000000002);tl.set("#cap119",{opacity:0},238.4625);
+tl.from("#cap120",{opacity:0,y:8,duration:.1,ease:"sine.out"},238.76250000000002);tl.set("#cap120",{opacity:0},239.5225);
+tl.from("#cap121",{opacity:0,y:8,duration:.1,ease:"sine.out"},240.44250000000002);tl.set("#cap121",{opacity:0},242.5025);
+tl.from("#cap122",{opacity:0,y:8,duration:.1,ease:"sine.out"},242.5825);tl.set("#cap122",{opacity:0},243.0225);
+tl.from("#cap123",{opacity:0,y:8,duration:.1,ease:"sine.out"},243.38250000000002);tl.set("#cap123",{opacity:0},245.5225);
+tl.from("#cap124",{opacity:0,y:8,duration:.1,ease:"sine.out"},245.6425);tl.set("#cap124",{opacity:0},246.1225);
+tl.from("#cap125",{opacity:0,y:8,duration:.1,ease:"sine.out"},246.94250000000002);tl.set("#cap125",{opacity:0},248.5025);
+tl.from("#cap126",{opacity:0,y:8,duration:.1,ease:"sine.out"},248.9225);tl.set("#cap126",{opacity:0},250.9825);
+tl.from("#cap127",{opacity:0,y:8,duration:.1,ease:"sine.out"},251.10250000000002);tl.set("#cap127",{opacity:0},251.4625);
+tl.from("#cap128",{opacity:0,y:8,duration:.1,ease:"sine.out"},252.28250000000003);tl.set("#cap128",{opacity:0},252.4425);
+tl.from("#cap129",{opacity:0,y:8,duration:.1,ease:"sine.out"},252.70250000000001);tl.set("#cap129",{opacity:0},255.1025);
+tl.from("#cap130",{opacity:0,y:8,duration:.1,ease:"sine.out"},255.66250000000002);tl.set("#cap130",{opacity:0},258.04249999999996);
+tl.from("#cap131",{opacity:0,y:8,duration:.1,ease:"sine.out"},258.1625);tl.set("#cap131",{opacity:0},259.0225);
+tl.from("#cap132",{opacity:0,y:8,duration:.1,ease:"sine.out"},259.5425);tl.set("#cap132",{opacity:0},260.9025);
+tl.from("#cap133",{opacity:0,y:8,duration:.1,ease:"sine.out"},260.9625);tl.set("#cap133",{opacity:0},261.8225);
+tl.from("#cap134",{opacity:0,y:8,duration:.1,ease:"sine.out"},262.7025);tl.set("#cap134",{opacity:0},265.12249999999995);
+tl.from("#cap135",{opacity:0,y:8,duration:.1,ease:"sine.out"},265.5625);tl.set("#cap135",{opacity:0},266.50249999999994);
+tl.from("#cap136",{opacity:0,y:8,duration:.1,ease:"sine.out"},266.9425);tl.set("#cap136",{opacity:0},268.30249999999995);
+tl.from("#cap137",{opacity:0,y:8,duration:.1,ease:"sine.out"},268.78249999999997);tl.set("#cap137",{opacity:0},269.60249999999996);
+tl.from("#cap138",{opacity:0,y:8,duration:.1,ease:"sine.out"},270.0225);tl.set("#cap138",{opacity:0},271.50249999999994);
+tl.from("#cap139",{opacity:0,y:8,duration:.1,ease:"sine.out"},272.2025);tl.set("#cap139",{opacity:0},274.2625);
+tl.from("#cap140",{opacity:0,y:8,duration:.1,ease:"sine.out"},274.6225);tl.set("#cap140",{opacity:0},275.06249999999994);
+tl.from("#cap141",{opacity:0,y:8,duration:.1,ease:"sine.out"},275.4225);tl.set("#cap141",{opacity:0},276.4025);
+tl.from("#cap142",{opacity:0,y:8,duration:.1,ease:"sine.out"},276.8425);tl.set("#cap142",{opacity:0},278.22249999999997);
+tl.from("#cap143",{opacity:0,y:8,duration:.1,ease:"sine.out"},279.1225);tl.set("#cap143",{opacity:0},281.00249999999994);
+tl.from("#cap144",{opacity:0,y:8,duration:.1,ease:"sine.out"},281.0825);tl.set("#cap144",{opacity:0},282.80249999999995);
+tl.from("#cap145",{opacity:0,y:8,duration:.1,ease:"sine.out"},283.3425);tl.set("#cap145",{opacity:0},285.0825);
+tl.from("#cap146",{opacity:0,y:8,duration:.1,ease:"sine.out"},285.98249999999996);tl.set("#cap146",{opacity:0},288.10249999999996);
+tl.from("#cap147",{opacity:0,y:8,duration:.1,ease:"sine.out"},288.4625);tl.set("#cap147",{opacity:0},290.28249999999997);
+tl.from("#cap148",{opacity:0,y:8,duration:.1,ease:"sine.out"},291.3025);tl.set("#cap148",{opacity:0},293.60249999999996);
+tl.from("#cap149",{opacity:0,y:8,duration:.1,ease:"sine.out"},293.7425);tl.set("#cap149",{opacity:0},295.16249999999997);
+window.__timelines['cadence-demo']=tl;</script></body></html>
