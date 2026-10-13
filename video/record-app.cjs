@@ -11,7 +11,7 @@ const {chromium}=require('playwright'),fs=require('fs'),path=require('path');
  await wait(42.9);await example('obama-20170114-1','pace-2');await find(0);
  await wait(64.9);await example('obama-20170114-1','energy-2');await find(1);
  const tm=JSON.parse(fs.readFileSync('video/production-timing.json'));await wait(tm.listen_start);await p.getByRole('button',{name:/Hear reference/}).click();await wait(tm.practice_start);await p.getByRole('button',{name:/Hear practice/}).click();
- await wait(92);await example('obama-20170114-2','pause-3');await find(0);
+ await wait(92);await example('obama-20170114-2','pause-3');await find(1);
  await wait(111);await example('obama-20170114-2','pitch-3');await find(0);
  await wait(132);await example('jfk-1961-1','noise-3');
  await wait(154);await p.getByRole('button',{name:'Compare recordings',exact:true}).click();const inp=p.locator('input[type=file]');await inp.nth(0).setInputFiles('web/public/dataset/obama-20170114-1-reference.flac');await inp.nth(1).setInputFiles('web/public/dataset/obama-20170114-1-energy-2.flac');const shared=JSON.parse(fs.readFileSync('web/public/dataset/references.json')).find(r=>r.id==='obama-20170114-1').transcript;await p.locator('textarea').fill(shared);

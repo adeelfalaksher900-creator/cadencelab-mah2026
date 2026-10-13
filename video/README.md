@@ -15,3 +15,5 @@ Narration is a disclosed ElevenLabs stock synthetic voice, Liam, obtained throug
 7. In `video/composition`, run `npm run check`, then `npm run render -- --fps 30 --quality high`.
 
 Media binaries are delivery assets, excluded from source history. Caption timings and composition code are included. The generated caption groups account for the composition's length warning; runtime, layout, motion and contrast checks pass.
+
+The reviewed production edit replaces 92–111 seconds with a second real capture of the same pause example, selecting the extended-pause finding. `record-pause.cjs` records this insert. Its audio remains the main edited narration; the listening comparison uses separate original phrase tracks.
