@@ -6,9 +6,28 @@ CadenceLab compares two recordings of the same English transcript. A quantized W
 
 The similarity score describes a documented acoustic rubric. It does not grade talent, accents, rhetorical truth, health, or a person's worth.
 
+## Try it in five minutes
+
+1. Open the dashboard and select **Try a labeled example**. No installation or account is required for the public examples.
+2. Choose a **Reference** and **Controlled example**. The workbench loads the pair automatically.
+3. Select a finding on the right. Compare **Relative energy**, **Normalized pitch** or **Waveform envelope**, then listen to the reference and practice phrase.
+4. Click transcript words to seek through either recording. Export the JSON evidence to inspect the measurements outside the app.
+5. Open **Dataset** for downloadable cases and inclusive results, or **Method** for the rubric, privacy boundary and limitations.
+
+For your own rehearsal, choose **Compare recordings**, select a reference and practice audio file, paste the exact words spoken in both, then select **Run local comparison**. See [the usage guide](docs/USAGE.md) for input requirements, interpretation and troubleshooting.
+
+![CadenceLab workbench with timed delivery evidence](docs/recording-67.png)
+
 ## Run the dashboard
 
-Node 22+ and npm:
+Use Node **22.12+** or **24.x** and npm. Clone the public repository first:
+
+```sh
+git clone https://github.com/adeelfalaksher900-creator/cadencelab-mah2026.git
+cd cadencelab-mah2026
+```
+
+Then start the dashboard:
 
 ```sh
 cd web
@@ -57,6 +76,12 @@ Model commit: `40a7d3243922b1fcbf660285036ecc7ef52667ea`; Apache 2.0 model famil
 `web/public/evaluation.json` and the Dataset screen expose all case-level results, including misses and abstentions. A localized case requires same-type temporal IoU of at least 0.30 against its independently recorded injection interval. Thresholds were developed with this synthetic corpus, so these are development diagnostics, **not a held-out estimate of student accuracy**. Mild changes may remain below the rubric's explicit thresholds.
 
 Historical English-speaking men are a narrow baseline. Real-student, accent, gender, language and recording-device validation remain necessary. Pitch tracking may make octave errors; heavy noise can defeat alignment. Source prestige is not a numerical ground-truth label for rhetorical quality.
+
+## Contribute
+
+CadenceLab is open source. Start with [CONTRIBUTING.md](CONTRIBUTING.md): it explains the development setup, useful contribution areas, validation and pull-request expectations. Documentation, accessibility, reproducibility and honest evaluation improvements are welcome. Do not publish private recordings or claim new accuracy without independent evidence.
+
+Report reproducible bugs through [GitHub Issues](https://github.com/adeelfalaksher900-creator/cadencelab-mah2026/issues). For sensitive vulnerabilities, follow [SECURITY.md](SECURITY.md) rather than publishing an exploit or personal data.
 
 ## Project map
 
