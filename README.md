@@ -1,5 +1,11 @@
 # CadenceLab
 
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![ONNX Runtime](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
+![MIT](https://img.shields.io/badge/License-MIT-52796F?style=flat-square)
+
 **Hear the difference. See the evidence.** An audio-and-text evidence workbench for student speakers and coaches, built for Multimodal AI Hackathon 2026, Track C.
 
 CadenceLab compares two recordings of the same English transcript. A quantized Wav2Vec2 model provides acoustic token probabilities; transcript-constrained CTC forced alignment maps words to timestamps. Signal processing then locates measurable delivery changes, shows their equations, and lets a coach listen to the corresponding regions.
@@ -7,6 +13,22 @@ CadenceLab compares two recordings of the same English transcript. A quantized W
 The similarity score describes a documented acoustic rubric. It does not grade talent, accents, rhetorical truth, health, or a person's worth.
 
 [Open the live dashboard](https://cadencelab-mah2026.vercel.app/) · [Read the project story](https://devpost.com/software/cadencelab)
+
+## Architecture
+
+```mermaid
+flowchart TD
+    Pair[Two recordings and matching transcript] --> Worker[Browser analysis worker]
+    Model[Pinned Wav2Vec2 ONNX model] --> Worker
+    Worker --> Align[CTC alignment and acoustic measurements]
+    Align --> UI[Evidence workbench]
+    UI --> Export[JSON evidence export]
+    Sources[Attributed source recordings] --> Python[Python corpus pipeline]
+    Python --> Corpus[Labeled cases and evaluation]
+    Corpus --> UI
+```
+
+The browser performs upload inference and comparison locally. The Python pipeline builds and evaluates the checked-in development corpus. Both expose measurements rather than an opaque speaking grade.
 
 ## Try it in five minutes
 
@@ -109,3 +131,4 @@ Requested design/security/video skills were consulted where relevant. Shadcn reg
 Proposed coordination roles: **Adeel Falak Sher** - product, interface and presentation; **Rauf Khalid** - dataset, acoustic evaluation and quality review. These are proposed roles for confirmation, not a claim that either person independently performed AI-assisted implementation. Only confirmed real team members should be added to Devpost.
 
 Own application code is MIT licensed. Model, fonts, dependencies and public-domain source recordings retain their respective notices. See `LICENSE` and `docs/DATASET.md`.
+
